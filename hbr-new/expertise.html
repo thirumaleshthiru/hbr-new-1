@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="HBR Analytics - Competency Centers. SAP BW, SAC, BPC, and S/4HANA Expertise.">
+    <title>Competency Centers - HBR Analytics</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/services.css">
+    <link rel="stylesheet" href="/assets/css/expertise.css">
+
+    <style>
+        /* Parallax Effect for Why Choose Us Section */
+        .parallax-section {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.95)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2000&auto=format&fit=crop');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="mobile-backdrop"></div>
+    <div class="mobile-menu-drawer">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <div class="mobile-dropdown">
+            <button class="mobile-dropdown-toggle">Services <i class="fas fa-chevron-down"></i></button>
+            <div class="mobile-dropdown-menu">
+                <a href="services.html#svc1" class="mobile-dropdown-link"><i
+                        class="fas fa-briefcase"></i><span>Consulting</span></a>
+                <a href="services.html#svc2" class="mobile-dropdown-link"><i
+                        class="fas fa-users"></i><span>Staffing</span></a>
+                <a href="services.html#svc3" class="mobile-dropdown-link"><i
+                        class="fas fa-chalkboard-teacher"></i><span>Training</span></a>
+                <a href="services.html#svc4" class="mobile-dropdown-link"><i class="fas fa-rocket"></i><span>Hire &
+                        Deploy</span></a>
+                <a href="ui-ux.html" class="mobile-dropdown-link"><i class="fas fa-palette"></i><span>UI/UX
+                        Design</span></a>
+                <a href="services.html" class="mobile-dropdown-link"
+                    style="font-weight: 700; color: #2563EB; border-top: 1px solid rgba(0,0,0,0.05); margin-top: 5px; padding-top: 10px;"><i
+                        class="fas fa-th-large"></i><span>All Services</span></a>
+            </div>
+        </div>
+        <div class="mobile-dropdown open">
+            <button class="mobile-dropdown-toggle">Solutions <i class="fas fa-chevron-down"></i></button>
+            <div class="mobile-dropdown-menu">
+                <a href="business-intelligence.html" class="mobile-dropdown-link"><i
+                        class="fas fa-chart-line"></i><span>Business Intelligence</span></a>
+                <a href="cloud-services.html" class="mobile-dropdown-link"><i class="fas fa-cloud"></i><span>Cloud
+                        Services</span></a>
+                <a href="ai-solutions.html" class="mobile-dropdown-link"><i class="fas fa-brain"></i><span>AI
+                        Solutions</span></a>
+                <a href="quantitative-risk.html" class="mobile-dropdown-link"><i
+                        class="fas fa-shield-alt"></i><span>Quantitative Risk</span></a>
+            </div>
+        </div>
+        <a href="expertise.html" class="mobile-nav-link active">Expertise</a>
+        <a href="careers.html" class="mobile-nav-link">Careers</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+        <button class="mobile-cta-btn open-chat-trigger">Get Started</button>
+    </div>
+
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-area">
+                <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 54" fill="none">
+                    <text x="0" y="28" font-family="'Poppins', sans-serif" font-weight="800" font-size="24"
+                        class="logo-text-primary">HBR Analytics</text>
+                    <text x="0" y="48" font-family="'Poppins', sans-serif" font-weight="500" font-size="13"
+                        letter-spacing="0.5" class="logo-text-secondary">& BI Solutions</text>
+                </svg>
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <div class="nav-item">
+                    <span class="nav-link" style="cursor: default;">Services <i class="fas fa-chevron-down"></i></span>
+                    <div class="dropdown-menu">
+                        <a href="services.html#svc1" class="dropdown-link"><i
+                                class="fas fa-briefcase"></i><span>Consulting</span></a>
+                        <a href="services.html#svc2" class="dropdown-link"><i
+                                class="fas fa-users"></i><span>Staffing</span></a>
+                        <a href="services.html#svc3" class="dropdown-link"><i
+                                class="fas fa-chalkboard-teacher"></i><span>Training</span></a>
+                        <a href="services.html#svc4" class="dropdown-link"><i class="fas fa-rocket"></i><span>Hire &
+                                Deploy</span></a>
+                        <a href="ui-ux.html" class="dropdown-link"><i class="fas fa-palette"></i><span>UI/UX
+                                Design</span></a>
+                        <div class="dropdown-divider"></div>
+                        <a href="services.html" class="dropdown-link" style="font-weight: 600; color: #2563EB;"><i
+                                class="fas fa-th-large"></i><span>All Services</span></a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <span class="nav-link">Solutions <i class="fas fa-chevron-down"></i></span>
+                    <div class="dropdown-menu">
+                        <a href="business-intelligence.html" class="dropdown-link"><i
+                                class="fas fa-chart-line"></i><span>Business Intelligence</span></a>
+                        <a href="cloud-services.html" class="dropdown-link"><i class="fas fa-cloud"></i><span>Cloud
+                                Services</span></a>
+                        <a href="ai-solutions.html" class="dropdown-link"><i class="fas fa-brain"></i><span>AI
+                                Solutions</span></a>
+                        <a href="quantitative-risk.html" class="dropdown-link"><i
+                                class="fas fa-shield-alt"></i><span>Quantitative Risk</span></a>
+                    </div>
+                </div>
+                <a href="expertise.html" class="nav-link active">Expertise</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="header-cta-wrapper"><button class="header-btn open-chat-trigger">Get Started</button></div>
+            <button class="mobile-toggle" aria-label="Menu"><i class="fas fa-bars hamburger-icon"></i></button>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="sub-hero-section">
+            <div class="sub-hero-bg-visual" style="background-image: url('/assets/images/service5.jpg');"></div>
+            <div class="sub-hero-overlay-gradient"></div>
+            <div class="sub-hero-content">
+                <div class="sub-hero-breadcrumbs">Home / <span>Competency Centers</span></div>
+                <h1 class="sub-hero-title">
+                    Our Expertise & <br>
+                    <span>Competency Centers</span>
+                </h1>
+                <p class="sub-hero-desc">
+                    We leverage cutting-edge SAP and Analytics technologies to deliver transformative solutions that
+                    drive efficiency and growth.
+                </p>
+                <a href="#expertise-list" class="sub-hero-cta">Explore Solutions <i
+                        class="fas fa-arrow-down ml-2"></i></a>
+            </div>
+        </section>
+
+        <section class="services-wrapper-section" id="expertise-list">
+            <div class="common-container">
+
+                <div class="service-row reveal-on-scroll">
+                    <div class="service-content-col">
+                        <span class="service-number">01</span>
+                        <h2 class="service-heading">SAP <span class="highlight-text">BW</span></h2>
+                        <h4 style="font-size: 18px; font-weight:600; margin-bottom:15px; color:#333;">EMPOWERING DATA
+                            WAREHOUSING AND REPORTING</h4>
+                        <p class="service-description-text">
+                            SAP BW (Business Warehouse) is an invaluable data warehousing and reporting solution that
+                            empowers businesses to collect, store, analyze and interpret information from multiple
+                            sources. We specialize in SAP BW solutions, offering businesses our knowledge to design,
+                            implement and optimize them according to individual company needs. We give businesses
+                            informed decision-making power, enhanced operational efficiencies and an edge in today’s
+                            data-driven landscape.
+                        </p>
+                    </div>
+                    <div class="service-img-col">
+                        <div class="service-img-wrapper">
+                            <img src="/assets/images/service6.jpg" alt="SAP BW">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-row reveal-on-scroll">
+                    <div class="service-content-col">
+                        <span class="service-number">02</span>
+                        <h2 class="service-heading">SAP <span class="highlight-text">BW4HANA</span></h2>
+                        <h4 style="font-size: 18px; font-weight:600; margin-bottom:15px; color:#333;">ACCELERATING DATA
+                            PROCESSING AND ANALYSIS</h4>
+                        <p class="service-description-text">
+                            SAP BW4HANA is SAP’s next-generation data warehousing solution built on its robust SAP HANA
+                            platform. It gives businesses access to real-time analytics and faster processing speeds
+                            with real-time processing capabilities. Companies using this tool are able to unlock their
+                            full potential while also driving digital transformation with deeper insights, faster
+                            decision-making speeds and digital transformation initiatives. We specialize in SAP BW4HANA
+                            so as to give businesses this competitive edge over rival solutions like Oracle EBS or
+                            Informatica.
+                        </p>
+                    </div>
+                    <div class="service-img-col">
+                        <div class="service-img-wrapper">
+                            <img src="/assets/images/service4.jpg" alt="SAP BW4HANA">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-row reveal-on-scroll">
+                    <div class="service-content-col">
+                        <span class="service-number">03</span>
+                        <h2 class="service-heading">SAP <span class="highlight-text">SAC</span></h2>
+                        <h4 style="font-size: 18px; font-weight:600; margin-bottom:15px; color:#333;">ENABLING
+                            INTELLIGENT DECISION-MAKING</h4>
+                        <p class="service-description-text">
+                            SAC (SAP Analytics Cloud) is a cloud-based analytics platform designed to combine business
+                            intelligence, augmented analytics and collaborative planning capabilities into one powerful
+                            solution for businesses of any size and industry. We have expertise in SAC implementation to
+                            enable businesses to harness intelligent decision-making using its visualization features,
+                            interactive dashboards and advanced analytic features.
+                        </p>
+                    </div>
+                    <div class="service-img-col">
+                        <div class="service-img-wrapper">
+                            <img src="/assets/images/service3.jpg" alt="SAC">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-row reveal-on-scroll">
+                    <div class="service-content-col">
+                        <span class="service-number">04</span>
+                        <h2 class="service-heading">SAP <span class="highlight-text">AO</span></h2>
+                        <h4 style="font-size: 18px; font-weight:600; margin-bottom:15px; color:#333;">ENHANCING
+                            REPORTING AND ANALYSIS</h4>
+                        <p class="service-description-text">
+                            SAP AO (Analysis for Office) is an add-in to Microsoft Excel that provides powerful
+                            reporting and analysis features for SAP data. Our experts specialize in this tool to assist
+                            businesses in improving reporting processes with SAP AO: creating dynamic reports,
+                            performing ad hoc analyses directly in Excel, and accessing real-time data directly for
+                            faster decision-making processes and more accurate decision-making capabilities.
+                        </p>
+                    </div>
+                    <div class="service-img-col">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2000&auto=format&fit=crop"
+                                alt="SAP AO">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-row reveal-on-scroll">
+                    <div class="service-content-col">
+                        <span class="service-number">05</span>
+                        <h2 class="service-heading">SAP <span class="highlight-text">BPC</span></h2>
+                        <p class="service-description-text">
+                            As experts in SAP BPC, we provide organizations with comprehensive services that allow them
+                            to optimize their financial planning and consolidation processes. Our team has extensive
+                            expertise in implementing, customizing, and supporting SAP BPC solutions; they have our full
+                            support in designing robust financial models, automating budgeting forecasting processes,
+                            and producing timely financial reports – helping achieve better control, data accuracy, and
+                            collaboration throughout an organization with SAP BPC solutions.
+                        </p>
+                    </div>
+                    <div class="service-img-col">
+                        <div class="service-img-wrapper">
+                            <img src="/assets/images/service7.jpg" alt="SAP BPC">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-row reveal-on-scroll">
+                    <div class="service-content-col">
+                        <span class="service-number">06</span>
+                        <h2 class="service-heading">GROUP <span class="highlight-text">REPORTING</span></h2>
+                        <p class="service-description-text">
+                            We excel at Group reporting, an indispensable tool that enables companies to efficiently
+                            meet financial consolidation and reporting obligations. We can streamline your consolidation
+                            process, eliminate manual errors, ensure compliance with local and international accounting
+                            standards, and help your company gain an all-around view of financial data for data-driven
+                            decision-making while meeting regulatory compliance with ease.
+                        </p>
+                    </div>
+                    <div class="service-img-col">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2000&auto=format&fit=crop"
+                                alt="Group Reporting">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-row reveal-on-scroll">
+                    <div class="service-content-col">
+                        <span class="service-number">07</span>
+                        <h2 class="service-heading">S4HANA <span class="highlight-text">EMBEDDED</span></h2>
+                        <p class="service-description-text">
+                            At HBR Analytics, we recognize the significance of real-time insights for businesses. With
+                            our S4HANA Embedded Analytics services, we help organizations maximize the full potential of
+                            their SAP S4HANA system to unlock vital business intelligence. Our experienced consultants
+                            specialize in designing and implementing tailored analytics solutions that give
+                            instantaneous access to critical data so you can make quicker informed decisions faster.
+                        </p>
+                    </div>
+                    <div class="service-img-col">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2000&auto=format&fit=crop"
+                                alt="S4HANA Embedded">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-row reveal-on-scroll">
+                    <div class="service-content-col">
+                        <span class="service-number">08</span>
+                        <h2 class="service-heading">SAP <span class="highlight-text">IBP</span></h2>
+                        <p class="service-description-text">
+                            Supply chain planning is critical to any organization’s success, and our Competency Centre
+                            excels in SAP IBP services. By harnessing its power to streamline supply chain processes,
+                            optimize inventory levels, improve demand forecasting accuracy, and enhance demand
+                            forecasting accuracy – as well as implement and configure SAP IBP modules.
+                        </p>
+                    </div>
+                    <div class="service-img-col">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80"
+                                alt="SAP IBP">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="why-choose-us-section reveal-on-scroll">
+            <div class="common-container">
+                <div class="why-grid">
+                    <div class="why-content">
+                        <span class="why-badge">Our Approach</span>
+                        <h2 class="why-title">Why Choose <br><span class="highlight-text">HBR Analytics?</span></h2>
+                        <p class="why-desc">
+                            Our Competency Centers are staffed by an in-house team of highly knowledgeable experts.
+                            Using our proven methodology, we assess business requirements before designing customized
+                            solutions incorporating best practices.
+                        </p>
+                        <div class="why-list">
+                            <div class="why-item">
+                                <div class="why-icon"><i class="fas fa-check-circle"></i></div>
+                                <div class="why-text">
+                                    <h4>Deep Expertise</h4>
+                                    <p>Extensive expertise in SAP BW, BW4HANA, SAC and AO technologies.</p>
+                                </div>
+                            </div>
+                            <div class="why-item">
+                                <div class="why-icon"><i class="fas fa-industry"></i></div>
+                                <div class="why-text">
+                                    <h4>Industry Experience</h4>
+                                    <p>Unique knowledge of specific challenges across various industries.</p>
+                                </div>
+                            </div>
+                            <div class="why-item">
+                                <div class="why-icon"><i class="fas fa-chart-line"></i></div>
+                                <div class="why-text">
+                                    <h4>Proven Track Record</h4>
+                                    <p>Successfully generating tangible results with real ROI for businesses.</p>
+                                </div>
+                            </div>
+                            <div class="why-item">
+                                <div class="why-icon"><i class="fas fa-heart"></i></div>
+                                <div class="why-text">
+                                    <h4>Customer-Centric</h4>
+                                    <p>Developing long-term partnerships by offering excellent support.</p>
+                                </div>
+                            </div>
+                            <div class="why-item">
+                                <div class="why-icon"><i class="fas fa-graduation-cap"></i></div>
+                                <div class="why-text">
+                                    <h4>Constant Learning</h4>
+                                    <p>Staying abreast of the most recent advancements in SAP analytics.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="why-visual">
+                        <div class="visual-card">
+                            <div class="floating-badge badge-top">
+                                <i class="fas fa-user-tie"></i> Expert Team
+                            </div>
+                            <div class="floating-badge badge-bottom">
+                                <i class="fas fa-rocket"></i> Proven ROI
+                            </div>
+                            <div class="abstract-shape"></div>
+                            <div class="img-container">
+                                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
+                                    alt="Consulting Team">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section reveal-on-scroll" id="cta">
+            <div class="cta-container">
+                <div class="cta-content">
+                    <h1 class="cta-title">Ready to Optimize Your Analytics?</h1>
+                    <p class="cta-description">Let our Competency Center experts design a solution for your success.</p>
+                </div>
+                <div class="flex flex-1 justify-center">
+                    <button class="cta-button open-chat-trigger" id="main-cta-btn">
+                        <span class="truncate">Get Started Now</span>
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo-area">
+                    <svg class="logo-svg footer-logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 54"
+                        fill="none">
+                        <text x="0" y="28" font-family="'Poppins', sans-serif" font-weight="800" font-size="24"
+                            fill="#ffffff">HBR Analytics</text>
+                        <text x="0" y="48" font-family="'Poppins', sans-serif" font-weight="500" font-size="13"
+                            letter-spacing="0.5" fill="#94a3b8" class="secondary-text">& BI Solutions</text>
+                    </svg>
+                </a>
+                <p>Empowering enterprises with cutting-edge analytics, AI-driven insights, and robust risk management
+                    solutions.</p>
+                <div class="social-links">
+                    <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="expertise.html">Expertise</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Solutions</h4>
+                <ul class="footer-links">
+                    <li><a href="business-intelligence.html">Business Intelligence</a></li>
+                    <li><a href="cloud-services.html">Cloud Services</a></li>
+                    <li><a href="ai-solutions.html">AI Solutions</a></li>
+                    <li><a href="quantitative-risk.html">Quantitative Risk</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Contact Us</h4>
+                <ul class="footer-contact-list">
+                    <li class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:08035849001">080
+                            35849001</a></li>
+                    <li class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+14696631132">+1 (469)
+                            663-1132</a></li>
+                    <li class="footer-contact-item"><i class="fas fa-envelope"></i><a
+                            href="mailto:info@hbranalytics.com">info@hbranalytics.com</a></li>
+                    <li class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>No 6, Shankari Building,
+                            <br>2nd floor, Marathahalli, <br>Bangalore - 560037</span></li>
+                    <li class="footer-contact-item"><i class="fas fa-globe-americas"></i><span>10440 Meadow Park Tower,
+                            <br>Suite 220, Dallas,<br> Texas - 75231</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright-bar">
+            <div class="copyright-content">
+                <span>© 2025 HBR Analytics. All rights reserved.</span>
+                <span class="credit-text">Designed & Developed by <a href="https://supernexsys.com"
+                        target="_blank">supernexsys</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-form-overlay" id="chat-overlay">
+        <div class="chat-form-card">
+            <div class="chat-header">
+                <div class="chat-header-text">
+                    <h3>Let's Connect</h3>
+                    <p>Tell us about your goals. We'll engineer the solution.</p>
+                </div>
+                <button class="close-chat-btn" id="close-chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-body">
+                <form action="#" method="POST">
+                    <input type="text" class="chat-input" placeholder="Full Name" required>
+                    <input type="email" class="chat-input" placeholder="Email Address" required>
+                    <input type="tel" class="chat-input" placeholder="Phone Number" required>
+                    <textarea class="chat-input chat-input-textarea" placeholder="Tell us about your goals..."
+                        required></textarea>
+                    <button type="submit" class="chat-submit">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <button id="floating-chat-trigger" aria-label="Open Chat">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+    </button>
+
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/expertise.js"></script>
+</body>
+
+</html>

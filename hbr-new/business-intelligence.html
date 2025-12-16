@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="HBR Analytics - Business Intelligence Solutions. Improved Decision-Making and Operational Efficiency.">
+    <title>Business Intelligence - HBR Analytics</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/business-intelligence.css">
+</head>
+
+<body>
+
+    <div class="mobile-backdrop"></div>
+    <div class="mobile-menu-drawer">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <div class="mobile-dropdown">
+            <button class="mobile-dropdown-toggle">Services <i class="fas fa-chevron-down"></i></button>
+            <div class="mobile-dropdown-menu">
+                <a href="services.html#svc1" class="mobile-dropdown-link"><i
+                        class="fas fa-briefcase"></i><span>Consulting</span></a>
+                <a href="services.html#svc2" class="mobile-dropdown-link"><i
+                        class="fas fa-users"></i><span>Staffing</span></a>
+                <a href="services.html#svc3" class="mobile-dropdown-link"><i
+                        class="fas fa-chalkboard-teacher"></i><span>Training</span></a>
+                <a href="services.html#svc4" class="mobile-dropdown-link"><i class="fas fa-rocket"></i><span>Hire &
+                        Deploy</span></a>
+                <a href="ui-ux.html" class="mobile-dropdown-link"><i class="fas fa-palette"></i><span>UI/UX
+                        Design</span></a>
+                <a href="services.html" class="mobile-dropdown-link"
+                    style="font-weight: 700; color: #2563EB; border-top: 1px solid rgba(0,0,0,0.05); margin-top: 5px; padding-top: 10px;"><i
+                        class="fas fa-th-large"></i><span>All Services</span></a>
+            </div>
+        </div>
+        <div class="mobile-dropdown open">
+            <button class="mobile-dropdown-toggle active">Solutions <i class="fas fa-chevron-down"></i></button>
+            <div class="mobile-dropdown-menu">
+                <a href="business-intelligence.html" class="mobile-dropdown-link active"><i
+                        class="fas fa-chart-line"></i><span>Business Intelligence</span></a>
+                <a href="cloud-services.html" class="mobile-dropdown-link"><i class="fas fa-cloud"></i><span>Cloud
+                        Services</span></a>
+                <a href="ai-solutions.html" class="mobile-dropdown-link"><i class="fas fa-brain"></i><span>AI
+                        Solutions</span></a>
+                <a href="quantitative-risk.html" class="mobile-dropdown-link"><i
+                        class="fas fa-shield-alt"></i><span>Quantitative Risk</span></a>
+            </div>
+        </div>
+        <a href="expertise.html" class="mobile-nav-link">Expertise</a>
+        <a href="careers.html" class="mobile-nav-link">Careers</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+        <button class="mobile-cta-btn open-chat-trigger">Get Started</button>
+    </div>
+
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-area">
+                <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 54" fill="none">
+                    <text x="0" y="28" font-family="'Poppins', sans-serif" font-weight="800" font-size="24"
+                        class="logo-text-primary">HBR Analytics</text>
+                    <text x="0" y="48" font-family="'Poppins', sans-serif" font-weight="500" font-size="13"
+                        letter-spacing="0.5" class="logo-text-secondary">& BI Solutions</text>
+                </svg>
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <div class="nav-item">
+                    <span class="nav-link" style="cursor: default;">Services <i class="fas fa-chevron-down"></i></span>
+                    <div class="dropdown-menu">
+                        <a href="services.html#svc1" class="dropdown-link"><i
+                                class="fas fa-briefcase"></i><span>Consulting</span></a>
+                        <a href="services.html#svc2" class="dropdown-link"><i
+                                class="fas fa-users"></i><span>Staffing</span></a>
+                        <a href="services.html#svc3" class="dropdown-link"><i
+                                class="fas fa-chalkboard-teacher"></i><span>Training</span></a>
+                        <a href="services.html#svc4" class="dropdown-link"><i class="fas fa-rocket"></i><span>Hire &
+                                Deploy</span></a>
+                        <a href="ui-ux.html" class="dropdown-link"><i class="fas fa-palette"></i><span>UI/UX
+                                Design</span></a>
+                        <div class="dropdown-divider"></div>
+                        <a href="services.html" class="dropdown-link" style="font-weight: 600; color: #2563EB;"><i
+                                class="fas fa-th-large"></i><span>All Services</span></a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <span class="nav-link active">Solutions <i class="fas fa-chevron-down"></i></span>
+                    <div class="dropdown-menu">
+                        <a href="business-intelligence.html" class="dropdown-link active"><i
+                                class="fas fa-chart-line"></i><span>Business Intelligence</span></a>
+                        <a href="cloud-services.html" class="dropdown-link"><i class="fas fa-cloud"></i><span>Cloud
+                                Services</span></a>
+                        <a href="ai-solutions.html" class="dropdown-link"><i class="fas fa-brain"></i><span>AI
+                                Solutions</span></a>
+                        <a href="quantitative-risk.html" class="dropdown-link"><i
+                                class="fas fa-shield-alt"></i><span>Quantitative Risk</span></a>
+                    </div>
+                </div>
+                <a href="expertise.html" class="nav-link">Expertise</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="header-cta-wrapper"><button class="header-btn open-chat-trigger">Get Started</button></div>
+            <button class="mobile-toggle" aria-label="Menu"><i class="fas fa-bars hamburger-icon"></i></button>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="hero-wrapper">
+            <div class="ambient-background"></div>
+            <div class="glow-blob blob-right"></div>
+            <div class="glow-blob blob-left"></div>
+
+            <div class="hero-grid">
+                <div class="hero-text-content">
+                    <div class="hero-tag">
+                        <span class="material-symbols-outlined" style="font-size: 16px;">bolt</span>
+                        <span>Analytics 4.0</span>
+                    </div>
+                    <h1 class="bi-hero-title">Explore the <br><span>Power of Data.</span></h1>
+                    <p class="bi-hero-desc">
+                        Transform your data into actionable insights. HBR Analytics' business intelligence solutions
+                        enable organizations to make more informed decisions, drive growth, and meet their goals.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn-lg btn-primary-hero open-chat-trigger">
+                            Request Demo
+                        </button>
+                        <a href="#benefits" class="btn-lg btn-outline-hero">
+                            <span class="material-symbols-outlined">arrow_downward</span>
+                            See Benefits
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="card-stack">
+                        <div class="glass-card card-revenue">
+                            <div class="card-header">
+                                <span class="card-title-text">Total Revenue</span>
+                                <div class="growth-pill">
+                                    <span class="material-symbols-outlined" style="font-size:14px">trending_up</span>
+                                    +12.4%
+                                </div>
+                            </div>
+                            <div class="line-graph-wrapper">
+                                <svg viewBox="0 0 300 150" width="100%" height="100%" preserveAspectRatio="none">
+                                    <defs>
+                                        <linearGradient id="gradientBlue" x1="0" x2="0" y1="0" y2="1">
+                                            <stop offset="0%" stop-color="#005bff" stop-opacity="0.2" />
+                                            <stop offset="100%" stop-color="#005bff" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M0 30H300 M0 70H300 M0 110H300" stroke="#E2E8F0" stroke-width="1"
+                                        stroke-dasharray="4" />
+                                    <path d="M0 100 Q75 120 150 70 T300 40 V150 H0 Z" fill="url(#gradientBlue)" />
+                                    <path class="graph-path" d="M0 100 Q75 120 150 70 T300 40" fill="none"
+                                        stroke="#005bff" stroke-width="3" stroke-linecap="round" />
+                                    <circle cx="150" cy="70" r="4" fill="white" stroke="#005bff" stroke-width="2" />
+                                    <circle cx="300" cy="40" r="4" fill="white" stroke="#005bff" stroke-width="2" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="glass-card card-performance">
+                            <div class="card-header">
+                                <span class="card-title-text">Regional Performance</span>
+                                <span class="material-symbols-outlined" style="color:#94a3b8">more_horiz</span>
+                            </div>
+                            <div class="chart-container">
+                                <div class="bar" style="height: 40%"></div>
+                                <div class="bar" style="height: 65%"></div>
+                                <div class="bar" style="height: 50%"></div>
+                                <div class="bar active" style="height: 85%"></div>
+                                <div class="bar" style="height: 60%"></div>
+                                <div class="bar" style="height: 45%"></div>
+                                <div class="bar" style="height: 70%"></div>
+                                <div class="bar" style="height: 55%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="section-white" id="benefits">
+            <div class="common-container">
+                <div class="section-header-custom reveal-on-scroll">
+                    <span class="section-badge"><i class="fas fa-star-of-life"></i> Key Benefits</span>
+                    <h2 class="section-title">How Our BI Solutions <span class="highlight-text">Help You?</span></h2>
+                    <p class="section-desc">We unlock your data's true potential to provide a competitive edge.</p>
+                </div>
+
+                <div class="animated-card-grid">
+                    <div class="animated-feature-card reveal-on-scroll" style="transition-delay: 0s;">
+                        <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
+                        <h3>Improved Decision-Making</h3>
+                        <p>Our business intelligence solutions give you actionable insights that allow for informed
+                            decision-making by harnessing data's power to identify trends, uncover opportunities and
+                            reduce risks.</p>
+                    </div>
+
+                    <div class="animated-feature-card reveal-on-scroll" style="transition-delay: 0.1s;">
+                        <div class="card-icon"><i class="fas fa-tachometer-alt"></i></div>
+                        <h3>Increased Operational Efficiency</h3>
+                        <p>HBR Analytics' solutions offer real-time visibility of key metrics to enable you to
+                            streamline operations and optimize processes more effectively - helping identify
+                            bottlenecks, eliminate inefficiency, and increase productivity.</p>
+                    </div>
+
+                    <div class="animated-feature-card reveal-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Increased Revenue & Profitability</h3>
+                        <p>Leveraging data analytics will allow your company to identify new revenue streams, optimize
+                            pricing strategies, improve customer retention rates, and ultimately drive more revenues and
+                            profits in your business.</p>
+                    </div>
+
+                    <div class="animated-feature-card reveal-on-scroll" style="transition-delay: 0.3s;">
+                        <div class="card-icon"><i class="fas fa-users"></i></div>
+                        <h3>Customer Insights & Engagement</h3>
+                        <p>Our business intelligence solutions enable you to gain a comprehensive view of your customers
+                            by examining customer behavior, preferences, and feedback - giving you insight into ways
+                            that you can personalize offerings for each one.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-tools-section">
+            <div class="common-container">
+                <div class="section-header-custom reveal-on-scroll">
+                    <span class="section-badge"><i class="fas fa-tools"></i> Technology Stack</span>
+                    <h2 class="section-title">Integrated <span class="highlight-text">Analytics Tools</span></h2>
+                    <p class="section-desc">We specialize in implementing the world's leading data warehousing and
+                        reporting platforms.</p>
+                </div>
+
+                <div class="tools-grid">
+                    <a href="expertise.html" class="tool-card reveal-on-scroll" style="transition-delay: 0s;">
+                        <div class="tool-artboard"></div>
+                        <div class="tool-overlay"></div>
+                        <div class="tool-content">
+                            <span class="tool-badge">Data Warehousing</span>
+                            <h3 class="tool-title">SAP BW</h3>
+                            <div class="tool-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </a>
+                    <a href="expertise.html" class="tool-card reveal-on-scroll" style="transition-delay: 0.1s;">
+                        <div class="tool-artboard"></div>
+                        <div class="tool-overlay"></div>
+                        <div class="tool-content">
+                            <span class="tool-badge">Cloud Analytics</span>
+                            <h3 class="tool-title">SAC</h3>
+                            <div class="tool-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </a>
+                    <a href="expertise.html" class="tool-card reveal-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="tool-artboard"></div>
+                        <div class="tool-overlay"></div>
+                        <div class="tool-content">
+                            <span class="tool-badge">Real-Time</span>
+                            <h3 class="tool-title">S/4HANA</h3>
+                            <div class="tool-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <div class="common-container">
+                <div class="section-header-custom reveal-on-scroll">
+                    <span class="section-badge"><i class="fas fa-road"></i> Our Methodology</span>
+                    <h2 class="section-title">From Data to <span class="highlight-text">Decision</span></h2>
+                    <p class="section-desc">A structured approach to transforming raw information into business value.
+                    </p>
+                </div>
+
+                <div class="process-steps">
+                    <div class="process-step-card reveal-on-scroll" style="transition-delay: 0s;">
+                        <div class="step-number"><i class="fas fa-database"></i></div>
+                        <h3 class="text-lg font-bold mb-2">1. Connect</h3>
+                        <p class="text-sm text-gray-500">We integrate with your existing data sources to create a
+                            unified data landscape.</p>
+                    </div>
+                    <div class="process-step-card reveal-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="step-number"><i class="fas fa-filter"></i></div>
+                        <h3 class="text-lg font-bold mb-2">2. Analyze</h3>
+                        <p class="text-sm text-gray-500">Our experts model and process the data to identify key
+                            performance indicators.</p>
+                    </div>
+                    <div class="process-step-card reveal-on-scroll" style="transition-delay: 0.4s;">
+                        <div class="step-number"><i class="fas fa-chart-pie"></i></div>
+                        <h3 class="text-lg font-bold mb-2">3. Visualize</h3>
+                        <p class="text-sm text-gray-500">We build interactive dashboards customized for your specific
+                            business needs.</p>
+                    </div>
+                    <div class="process-step-card reveal-on-scroll" style="transition-delay: 0.6s;">
+                        <div class="step-number"><i class="fas fa-rocket"></i></div>
+                        <h3 class="text-lg font-bold mb-2">4. Optimize</h3>
+                        <p class="text-sm text-gray-500">Continuous refinement to ensure your BI strategy drives ongoing
+                            efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="parallax-section" id="why-choose-us">
+            <div class="common-container">
+                <div class="section-header-custom reveal-on-scroll">
+                    <span class="section-badge"><i class="fas fa-handshake"></i> Our Commitment</span>
+                    <h2 class="section-title">Why Choose <span class="highlight-text">HBR Analytics?</span></h2>
+                    <p class="section-desc">We bring unparalleled expertise and a dedicated team to every project.</p>
+                </div>
+
+                <div class="parallax-grid" id="parallaxGrid">
+                    <div class="parallax-card reveal-on-scroll" data-speed="0">
+                        <i class="fas fa-user-tie"></i>
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Unparalleled Expertise</h3>
+                        <p class="text-gray-600 text-sm flex-grow">A team of seasoned professionals with years of
+                            experience in Business Intelligence and data analytics.</p>
+                    </div>
+                    <div class="parallax-card reveal-on-scroll" data-speed="0.05">
+                        <i class="fas fa-cogs"></i>
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Seamless Integration</h3>
+                        <p class="text-gray-600 text-sm flex-grow">Solutions that integrate into existing systems with
+                            minimal disruption and scale with your needs.</p>
+                    </div>
+                    <div class="parallax-card reveal-on-scroll" data-speed="0">
+                        <i class="fas fa-gem"></i>
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Tailored Solutions</h3>
+                        <p class="text-gray-600 text-sm flex-grow">We tailor solutions specifically to fit the unique
+                            requirements of individual companies.</p>
+                    </div>
+                    <div class="parallax-card reveal-on-scroll" data-speed="0.08">
+                        <i class="fas fa-headset"></i>
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Excellent Support</h3>
+                        <p class="text-gray-600 text-sm flex-grow">Easy and quick access to a team of trained support
+                            agents to address any inquiries.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-stack-section">
+            <div class="common-container">
+                <div class="section-header-custom" style="margin-bottom: 30px;">
+                    <span class="text-sm font-bold text-gray-400 uppercase tracking-widest">Powered by Modern
+                        Technology</span>
+                </div>
+                <div class="marquee-container">
+                    <div class="marquee-content">
+                        <div class="tech-logo-item"><i class="fas fa-database"></i> SAP HANA</div>
+                        <div class="tech-logo-item"><i class="fas fa-chart-bar"></i> Power BI</div>
+                        <div class="tech-logo-item"><i class="fas fa-cloud"></i> Snowflake</div>
+                        <div class="tech-logo-item"><i class="fab fa-python"></i> Python</div>
+                        <div class="tech-logo-item"><i class="fas fa-server"></i> SQL Server</div>
+                        <div class="tech-logo-item"><i class="fab fa-microsoft"></i> Azure Databricks</div>
+                        <div class="tech-logo-item"><i class="fas fa-bolt"></i> Power Apps</div>
+                        <div class="tech-logo-item"><i class="fas fa-database"></i> SAP HANA</div>
+                        <div class="tech-logo-item"><i class="fas fa-chart-bar"></i> Power BI</div>
+                        <div class="tech-logo-item"><i class="fas fa-cloud"></i> Snowflake</div>
+                        <div class="tech-logo-item"><i class="fab fa-python"></i> Python</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="industries-section">
+            <div class="common-container">
+                <div class="section-header-custom reveal-on-scroll">
+                    <span class="section-badge"><i class="fas fa-building"></i> Industries Served</span>
+                    <h2 class="section-title">BI Across Diverse <span class="highlight-text">Sectors</span></h2>
+                    <p class="section-desc">Our Business Intelligence services are tailored to meet the unique
+                        challenges and opportunities across a wide range of industries.</p>
+                </div>
+                <div class="industries-grid reveal-on-scroll">
+                    <div class="industry-tag">Retail and E-Commerce</div>
+                    <div class="industry-tag">Financial Services</div>
+                    <div class="industry-tag">Healthcare</div>
+                    <div class="industry-tag">Manufacturing</div>
+                    <div class="industry-tag">Technology and IT</div>
+                    <div class="industry-tag">Energy and Utilities</div>
+                    <div class="industry-tag">Hospitality and Tourism</div>
+                    <div class="industry-tag">Transportation & Logistics</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section reveal-on-scroll" id="faq">
+            <div class="common-container">
+                <div class="tabs-header-section">
+                    <span class="tabs-section-badge"><i class="fas fa-layer-group"></i> Strategic Insights</span>
+                </div>
+                <div class="faq-grid">
+                    <div class="faq-title-col">
+                        <h2 class="faq-title">Explore the <br><span class="highlight-text">Power of Data</span></h2>
+                        <p class="faq-desc">Discover how our solutions drive tangible business outcomes and help you
+                            unlock potential.</p>
+                    </div>
+                    <div class="faq-list">
+                        <div class="faq-accordion-item">
+                            <div class="faq-border-mask"></div>
+                            <div class="faq-inner-card">
+                                <div class="faq-question">
+                                    <h3>Transform Your Data into Actionable Insights</h3>
+                                    <div class="faq-icon-cont"><i class="fas fa-chevron-down"></i></div>
+                                </div>
+                                <div class="faq-content-inner">
+                                    <div class="faq-body">
+                                        <p>HBR Analytics' business intelligence solutions enable organizations to make
+                                            more informed decisions, drive growth and meet their goals by unlocking
+                                            their data's true potential. With cutting-edge technology and expertise on
+                                            hand, our solutions help businesses to tap the full power of information for
+                                            a competitive edge.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-accordion-item">
+                            <div class="faq-border-mask"></div>
+                            <div class="faq-inner-card">
+                                <div class="faq-question">
+                                    <h3>Gain a Competitive Edge with Advanced Analytics</h3>
+                                    <div class="faq-icon-cont"><i class="fas fa-chevron-down"></i></div>
+                                </div>
+                                <div class="faq-content-inner">
+                                    <div class="faq-body">
+                                        <p>We help businesses gain a competitive advantage with our advanced analytics
+                                            capabilities. Utilizing cutting-edge technology and sophisticated
+                                            algorithms, our expertise allows organizations to uncover hidden patterns,
+                                            trends, and correlations within their data to enable informed business
+                                            growth while increasing efficiency.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-accordion-item">
+                            <div class="faq-border-mask"></div>
+                            <div class="faq-inner-card">
+                                <div class="faq-question">
+                                    <h3>Maximize Efficiency with Intelligent Reporting</h3>
+                                    <div class="faq-icon-cont"><i class="fas fa-chevron-down"></i></div>
+                                </div>
+                                <div class="faq-content-inner">
+                                    <div class="faq-body">
+                                        <p>Our business intelligence experts understand the power of reporting goes
+                                            beyond simply presenting data. With our intelligent reporting solutions,
+                                            businesses get access to interactive dashboards, customizable reports, and
+                                            real-time updates. So, the key stakeholders have all of the relevant
+                                            information at the right time to make educated decisions and take immediate
+                                            action as required.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-accordion-item">
+                            <div class="faq-border-mask"></div>
+                            <div class="faq-inner-card">
+                                <div class="faq-question">
+                                    <h3>Drive Business Growth with Predictive Analytics</h3>
+                                    <div class="faq-icon-cont"><i class="fas fa-chevron-down"></i></div>
+                                </div>
+                                <div class="faq-content-inner">
+                                    <div class="faq-body">
+                                        <p>HBR Analytics' predictive analytics capabilities offer businesses a
+                                            transformative effect on operations, providing forecasting capabilities to
+                                            predict trends, identify risks and take advantage of opportunities as soon
+                                            as they appear. Leveraging predictive analytics enables organizations to
+                                            proactively address challenges while optimizing operations and driving
+                                            growth within their organization.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section reveal-on-scroll" id="contact">
+            <div class="cta-container">
+                <div class="cta-content">
+                    <h1 class="cta-title">Ready to Transform Your Data?</h1>
+                    <p class="cta-description">Unlock powerful analytics and data-driven decisions with our all-in-one
+                        platform.</p>
+                </div>
+                <div class="flex flex-1 justify-center">
+                    <button class="cta-button open-chat-trigger" id="main-cta-btn">
+                        <span class="truncate">Get Started Now</span>
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo-area">
+                    <svg class="logo-svg footer-logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 54"
+                        fill="none">
+                        <text x="0" y="28" font-family="'Poppins', sans-serif" font-weight="800" font-size="24"
+                            fill="#ffffff">HBR Analytics</text>
+                        <text x="0" y="48" font-family="'Poppins', sans-serif" font-weight="500" font-size="13"
+                            letter-spacing="0.5" fill="#94a3b8" class="secondary-text">& BI Solutions</text>
+                    </svg>
+                </a>
+                <p>Empowering enterprises with cutting-edge analytics, AI-driven insights, and robust risk management
+                    solutions.</p>
+                <div class="social-links">
+                    <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="expertise.html">Expertise</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Solutions</h4>
+                <ul class="footer-links">
+                    <li><a href="business-intelligence.html">Business Intelligence</a></li>
+                    <li><a href="cloud-services.html">Cloud Services</a></li>
+                    <li><a href="ai-solutions.html">AI Solutions</a></li>
+                    <li><a href="quantitative-risk.html">Quantitative Risk</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Contact Us</h4>
+                <ul class="footer-contact-list">
+                    <li class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:08035849001">080
+                            35849001</a></li>
+                    <li class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+14696631132">+1 (469)
+                            663-1132</a></li>
+                    <li class="footer-contact-item"><i class="fas fa-envelope"></i><a
+                            href="mailto:info@hbranalytics.com">info@hbranalytics.com</a></li>
+                    <li class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>No 6, Shankari Building,
+                            <br>2nd floor, Marathahalli, <br>Bangalore - 560037</span></li>
+                    <li class="footer-contact-item"><i class="fas fa-globe-americas"></i><span>10440 Meadow Park Tower,
+                            <br>Suite 220, Dallas,<br> Texas - 75231</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright-bar">
+            <div class="copyright-content">
+                <span>© 2025 HBR Analytics. All rights reserved.</span>
+                <span class="credit-text">Designed & Developed by <a href="https://supernexsys.com"
+                        target="_blank">supernexsys</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-form-overlay" id="chat-overlay">
+        <div class="chat-form-card">
+            <div class="chat-header">
+                <div class="chat-header-text">
+                    <h3>Let's Connect</h3>
+                    <p>Tell us about your goals. We'll engineer the solution.</p>
+                </div>
+                <button class="close-chat-btn" id="close-chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-body">
+                <form action="#" method="POST">
+                    <input type="text" class="chat-input" placeholder="Full Name" required>
+                    <input type="email" class="chat-input" placeholder="Email Address" required>
+                    <input type="tel" class="chat-input" placeholder="Phone Number" required>
+                    <textarea class="chat-input chat-input-textarea" placeholder="Tell us about your goals..."
+                        required></textarea>
+                    <button type="submit" class="chat-submit">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <button id="floating-chat-trigger" aria-label="Open Chat">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+    </button>
+
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/business-intelligence.js"></script>
+</body>
+
+</html>

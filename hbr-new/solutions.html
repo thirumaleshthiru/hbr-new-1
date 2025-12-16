@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="HBR Analytics - Enterprise Solutions.">
+    <title>Solutions - HBR Analytics</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/solutions.css">
+</head>
+
+<body>
+
+    <div class="mobile-backdrop"></div>
+    <div class="mobile-menu-drawer">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <div class="mobile-dropdown">
+            <button class="mobile-dropdown-toggle">Services <i class="fas fa-chevron-down"></i></button>
+            <div class="mobile-dropdown-menu">
+                <a href="services.html#svc1" class="mobile-dropdown-link"><i
+                        class="fas fa-briefcase"></i><span>Consulting</span></a>
+                <a href="services.html#svc2" class="mobile-dropdown-link"><i
+                        class="fas fa-users"></i><span>Staffing</span></a>
+                <a href="services.html#svc3" class="mobile-dropdown-link"><i
+                        class="fas fa-chalkboard-teacher"></i><span>Training</span></a>
+                <a href="services.html#svc4" class="mobile-dropdown-link"><i class="fas fa-rocket"></i><span>Hire &
+                        Deploy</span></a>
+                <a href="ui-ux.html" class="mobile-dropdown-link"><i class="fas fa-palette"></i><span>UI/UX
+                        Design</span></a>
+                <a href="services.html" class="mobile-dropdown-link"
+                    style="font-weight: 700; color: #2563EB; border-top: 1px solid rgba(0,0,0,0.05); margin-top: 5px; padding-top: 10px;"><i
+                        class="fas fa-th-large"></i><span>All Services</span></a>
+            </div>
+        </div>
+        <div class="mobile-dropdown open">
+            <button class="mobile-dropdown-toggle">Solutions <i class="fas fa-chevron-down"></i></button>
+            <div class="mobile-dropdown-menu">
+                <a href="business-intelligence.html" class="mobile-dropdown-link"><i
+                        class="fas fa-chart-line"></i><span>Business Intelligence</span></a>
+                <a href="cloud-services.html" class="mobile-dropdown-link"><i class="fas fa-cloud"></i><span>Cloud
+                        Services</span></a>
+                <a href="ai-solutions.html" class="mobile-dropdown-link"><i class="fas fa-brain"></i><span>AI
+                        Solutions</span></a>
+                <a href="quantitative-risk.html" class="mobile-dropdown-link"><i
+                        class="fas fa-shield-alt"></i><span>Quantitative Risk</span></a>
+            </div>
+        </div>
+        <a href="expertise.html" class="mobile-nav-link">Expertise</a>
+        <a href="careers.html" class="mobile-nav-link">Careers</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+        <button class="mobile-cta-btn open-chat-trigger">Get Started</button>
+    </div>
+
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-area">
+                <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 54" fill="none">
+                    <text x="0" y="28" font-family="'Poppins', sans-serif" font-weight="800" font-size="24"
+                        class="logo-text-primary">HBR Analytics</text>
+                    <text x="0" y="48" font-family="'Poppins', sans-serif" font-weight="500" font-size="13"
+                        letter-spacing="0.5" class="logo-text-secondary">& BI Solutions</text>
+                </svg>
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <div class="nav-item">
+                    <span class="nav-link" style="cursor: default;">Services <i class="fas fa-chevron-down"></i></span>
+                    <div class="dropdown-menu">
+                        <a href="services.html#svc1" class="dropdown-link"><i
+                                class="fas fa-briefcase"></i><span>Consulting</span></a>
+                        <a href="services.html#svc2" class="dropdown-link"><i
+                                class="fas fa-users"></i><span>Staffing</span></a>
+                        <a href="services.html#svc3" class="dropdown-link"><i
+                                class="fas fa-chalkboard-teacher"></i><span>Training</span></a>
+                        <a href="services.html#svc4" class="dropdown-link"><i class="fas fa-rocket"></i><span>Hire &
+                                Deploy</span></a>
+                        <a href="ui-ux.html" class="dropdown-link"><i class="fas fa-palette"></i><span>UI/UX
+                                Design</span></a>
+                        <div class="dropdown-divider"></div>
+                        <a href="services.html" class="dropdown-link" style="font-weight: 600; color: #2563EB;"><i
+                                class="fas fa-th-large"></i><span>All Services</span></a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <span class="nav-link">Solutions <i class="fas fa-chevron-down"></i></span>
+                    <div class="dropdown-menu">
+                        <a href="business-intelligence.html" class="dropdown-link"><i
+                                class="fas fa-chart-line"></i><span>Business Intelligence</span></a>
+                        <a href="cloud-services.html" class="dropdown-link"><i class="fas fa-cloud"></i><span>Cloud
+                                Services</span></a>
+                        <a href="ai-solutions.html" class="dropdown-link"><i class="fas fa-brain"></i><span>AI
+                                Solutions</span></a>
+                        <a href="quantitative-risk.html" class="dropdown-link"><i
+                                class="fas fa-shield-alt"></i><span>Quantitative Risk</span></a>
+                    </div>
+                </div>
+                <a href="expertise.html" class="nav-link">Expertise</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="header-cta-wrapper"><button class="header-btn open-chat-trigger">Get Started</button></div>
+            <button class="mobile-toggle" aria-label="Menu"><i class="fas fa-bars hamburger-icon"></i></button>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="sub-hero-section">
+            <div class="sub-hero-bg-visual"
+                style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop');">
+            </div>
+            <div class="sub-hero-overlay-gradient"></div>
+            <div class="sub-hero-content">
+                <div class="sub-hero-breadcrumbs">Home / <span>Solutions</span></div>
+                <h1 class="sub-hero-title">
+                    Transformative <br>
+                    <span>Enterprise Solutions</span>
+                </h1>
+                <p class="sub-hero-desc">
+                    Scalable, secure, and intelligent technology frameworks designed to solve complex business
+                    challenges and drive digital innovation.
+                </p>
+                <a href="#solutions-list" class="sub-hero-cta">
+                    View All Solutions <i class="fas fa-arrow-down ml-2"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="solutions-wrapper-section" id="solutions-list">
+            <div class="common-container">
+
+                <div class="unified-card reveal-on-scroll">
+                    <div class="card-visual">
+                        <div class="particles">
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                        </div>
+                        <div class="anim-wrapper">
+                            <div class="data-bars">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
+                            <div class="center-icon">
+                                <div class="icon-core">
+                                    <svg class="icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 13h2v8H3v-8zm6-4h2v12H9V9zm6-6h2v18h-2V3zm6 8h2v10h-2V11z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <div class="solution-header-group">
+                            <div class="solution-badge-num">01</div>
+                        </div>
+                        <h2 class="solution-heading"><span class="highlight-text">Business</span> Intelligence</h2>
+                        <p class="solution-description-text">Transform raw data into actionable insights. Our BI
+                            solutions provide real-time dashboards and reporting tools that empower informed
+                            decision-making across your organization.</p>
+                        <div class="tech-tags">
+                            <span>Power BI</span>
+                            <span>Tableau</span>
+                            <span>SAP HANA</span>
+                        </div>
+                        <ul class="solution-list">
+                            <li><i class="fas fa-chart-pie"></i> Intelligent Reporting & Dashboards</li>
+                            <li><i class="fas fa-database"></i> Data Mining & Warehousing</li>
+                            <li><i class="fas fa-search-dollar"></i> Predictive Forecasting</li>
+                        </ul>
+                        <a href="business-intelligence.html" class="btn-solution">Explore BI <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="unified-card reveal-on-scroll">
+                    <div class="card-visual">
+                        <div class="particles">
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                        </div>
+                        <div class="anim-wrapper">
+                            <div class="wave wave-1"></div>
+                            <div class="wave wave-2"></div>
+                            <div class="center-icon">
+                                <div class="icon-core"><i class="fas fa-cloud"
+                                        style="color: #2563EB; font-size: 36px;"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <div class="solution-header-group">
+                            <div class="solution-badge-num">02</div>
+                        </div>
+                        <h2 class="solution-heading">SAP & <span class="highlight-text">Cloud</span></h2>
+                        <p class="solution-description-text">Secure, scalable infrastructure and seamless SAP
+                            integration. We guide your migration journey and optimize your cloud environment for
+                            performance and cost-efficiency.</p>
+                        <div class="tech-tags">
+                            <span>Azure</span>
+                            <span>AWS</span>
+                            <span>SAP BTP</span>
+                        </div>
+                        <ul class="solution-list">
+                            <li><i class="fas fa-cloud-upload-alt"></i> Cloud Migration Strategy</li>
+                            <li><i class="fas fa-server"></i> Infrastructure Management</li>
+                            <li><i class="fas fa-shield-alt"></i> Cloud Security & Compliance</li>
+                        </ul>
+                        <a href="sap-cloud.html" class="btn-solution">Explore Cloud <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="unified-card reveal-on-scroll">
+                    <div class="card-visual">
+                        <div class="particles">
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                        </div>
+                        <div class="anim-wrapper">
+                            <div class="scan-line"></div>
+                            <div class="center-icon">
+                                <div class="icon-core"><i class="fas fa-brain"
+                                        style="color: #2563EB; font-size: 36px;"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <div class="solution-header-group">
+                            <div class="solution-badge-num">03</div>
+                        </div>
+                        <h2 class="solution-heading">AI & <span class="highlight-text">Machine Learning</span></h2>
+                        <p class="solution-description-text">Automate complex tasks and uncover hidden patterns. Our AI
+                            solutions leverage deep learning and NLP to drive intelligent transformation in your
+                            business processes.</p>
+                        <div class="tech-tags">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>OpenAI</span>
+                        </div>
+                        <ul class="solution-list">
+                            <li><i class="fas fa-robot"></i> Process Automation (RPA)</li>
+                            <li><i class="fas fa-comments"></i> NLP & Chatbots</li>
+                            <li><i class="fas fa-eye"></i> Computer Vision Systems</li>
+                        </ul>
+                        <a href="ai-ml.html" class="btn-solution">Explore AI <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="unified-card reveal-on-scroll">
+                    <div class="card-visual">
+                        <div class="particles">
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                        </div>
+                        <div class="anim-wrapper">
+                            <div class="orbit-trail"></div>
+
+                            <div class="orbit-icon-container">
+                                <div class="orbit-inner-icon">
+                                    <svg class="icon-svg" style="width: 16px; height: 16px;" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="center-icon">
+                                <div class="icon-core">
+                                    <svg class="icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <div class="solution-header-group">
+                            <div class="solution-badge-num">04</div>
+                        </div>
+                        <h2 class="solution-heading"><span class="highlight-text">Quantitative</span> Risk</h2>
+                        <p class="solution-description-text">Mitigate financial uncertainty with robust modeling. We
+                            provide comprehensive risk assessment, model validation, and regulatory compliance support.
+                        </p>
+                        <div class="tech-tags">
+                            <span>SAS</span>
+                            <span>Matlab</span>
+                            <span>R</span>
+                        </div>
+                        <ul class="solution-list">
+                            <li><i class="fas fa-balance-scale"></i> Model Validation (SR 11-7)</li>
+                            <li><i class="fas fa-chart-line"></i> Credit & Market Risk Modeling</li>
+                            <li><i class="fas fa-file-contract"></i> Regulatory Reporting (CCAR/DFAST)</li>
+                        </ul>
+                        <a href="quant-risk.html" class="btn-solution">Explore Risk <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="cta-section reveal-on-scroll" id="cta">
+            <div class="cta-container">
+                <div class="cta-content">
+                    <h1 class="cta-title">Need a Custom Solution?</h1>
+                    <p class="cta-description">We tailor our technology stacks to meet your specific industry
+                        requirements. Let's build something great.</p>
+                </div>
+                <div class="flex flex-1 justify-center">
+                    <a href="contact.html" class="cta-button">Get in Touch <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo-area">
+                    <svg class="logo-svg footer-logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 54"
+                        fill="none">
+                        <text x="0" y="28" font-family="'Poppins', sans-serif" font-weight="800" font-size="24"
+                            fill="#ffffff">HBR Analytics</text>
+                        <text x="0" y="48" font-family="'Poppins', sans-serif" font-weight="500" font-size="13"
+                            letter-spacing="0.5" fill="#94a3b8" class="secondary-text">& BI Solutions</text>
+                    </svg>
+                </a>
+                <p>Empowering enterprises with cutting-edge analytics, AI-driven insights, and robust risk management
+                    solutions.</p>
+                <div class="social-links">
+                    <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="expertise.html">Expertise</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Solutions</h4>
+                <ul class="footer-links">
+                    <li><a href="business-intelligence.html">Business Intelligence</a></li>
+                    <li><a href="cloud-services.html">Cloud Services</a></li>
+                    <li><a href="ai-solutions.html">AI Solutions</a></li>
+                    <li><a href="quantitative-risk.html">Quantitative Risk</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Contact Us</h4>
+                <ul class="footer-contact-list">
+                    <li class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:08035849001">080
+                            35849001</a></li>
+                    <li class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+14696631132">+1 (469)
+                            663-1132</a></li>
+                    <li class="footer-contact-item"><i class="fas fa-envelope"></i><a
+                            href="mailto:info@hbranalytics.com">info@hbranalytics.com</a></li>
+                    <li class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>No 6, Shankari Building,
+                            <br>2nd floor, Marathahalli, <br>Bangalore - 560037</span></li>
+                    <li class="footer-contact-item"><i class="fas fa-globe-americas"></i><span>10440 Meadow Park Tower,
+                            <br>Suite 220, Dallas,<br> Texas - 75231</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright-bar">
+            <div class="copyright-content">
+                <span>© 2025 HBR Analytics. All rights reserved.</span>
+                <span class="credit-text">Designed & Developed by <a href="https://supernexsys.com"
+                        target="_blank">supernexsys</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-form-overlay" id="chat-overlay">
+        <div class="chat-form-card">
+            <div class="chat-header">
+                <div class="chat-header-text">
+                    <h3>Let's Connect</h3>
+                    <p>Tell us about your goals. We'll engineer the solution.</p>
+                </div>
+                <button class="close-chat-btn" id="close-chat" aria-label="Close Chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-body">
+                <form action="#" method="POST">
+                    <input type="text" class="chat-input" placeholder="Full Name" required>
+                    <input type="email" class="chat-input" placeholder="Email Address" required>
+                    <input type="tel" class="chat-input" placeholder="Phone Number" required>
+                    <textarea class="chat-input chat-input-textarea" placeholder="Tell us about your goals..."
+                        required></textarea>
+                    <button type="submit" class="chat-submit">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <button id="floating-chat-trigger" aria-label="Open Chat">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+    </button>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>

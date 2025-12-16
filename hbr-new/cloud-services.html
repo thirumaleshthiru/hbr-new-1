@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="HBR Analytics - SAP & Cloud Solutions. Scalable, Secure, and Cost-Effective.">
+    <title>SAP & Cloud Solutions - HBR Analytics</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/sap-cloud.css">
+</head>
+
+<body>
+
+    <div class="mobile-backdrop"></div>
+    <div class="mobile-menu-drawer">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <div class="mobile-dropdown">
+            <button class="mobile-dropdown-toggle">Services <i class="fas fa-chevron-down"></i></button>
+            <div class="mobile-dropdown-menu">
+                <a href="services.html#svc1" class="mobile-dropdown-link"><i
+                        class="fas fa-briefcase"></i><span>Consulting</span></a>
+                <a href="services.html#svc2" class="mobile-dropdown-link"><i
+                        class="fas fa-users"></i><span>Staffing</span></a>
+                <a href="services.html#svc3" class="mobile-dropdown-link"><i
+                        class="fas fa-chalkboard-teacher"></i><span>Training</span></a>
+                <a href="services.html#svc4" class="mobile-dropdown-link"><i class="fas fa-rocket"></i><span>Hire &
+                        Deploy</span></a>
+                <a href="ui-ux.html" class="mobile-dropdown-link"><i class="fas fa-palette"></i><span>UI/UX
+                        Design</span></a>
+                <a href="services.html" class="mobile-dropdown-link"
+                    style="font-weight: 700; color: #2563EB; border-top: 1px solid rgba(0,0,0,0.05); margin-top: 5px; padding-top: 10px;"><i
+                        class="fas fa-th-large"></i><span>All Services</span></a>
+            </div>
+        </div>
+        <div class="mobile-dropdown open">
+            <button class="mobile-dropdown-toggle active">Solutions <i class="fas fa-chevron-down"></i></button>
+            <div class="mobile-dropdown-menu">
+                <a href="business-intelligence.html" class="mobile-dropdown-link"><i
+                        class="fas fa-chart-line"></i><span>Business Intelligence</span></a>
+                <a href="cloud-services.html" class="mobile-dropdown-link active"><i
+                        class="fas fa-cloud"></i><span>Cloud
+                        Services</span></a>
+                <a href="ai-solutions.html" class="mobile-dropdown-link"><i class="fas fa-brain"></i><span>AI
+                        Solutions</span></a>
+                <a href="quantitative-risk.html" class="mobile-dropdown-link"><i
+                        class="fas fa-shield-alt"></i><span>Quantitative Risk</span></a>
+            </div>
+        </div>
+        <a href="expertise.html" class="mobile-nav-link">Expertise</a>
+        <a href="careers.html" class="mobile-nav-link">Careers</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+        <button class="mobile-cta-btn open-chat-trigger">Get Started</button>
+    </div>
+
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-area">
+                <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 54" fill="none">
+                    <text x="0" y="28" font-family="'Poppins', sans-serif" font-weight="800" font-size="24"
+                        class="logo-text-primary">HBR Analytics</text>
+                    <text x="0" y="48" font-family="'Poppins', sans-serif" font-weight="500" font-size="13"
+                        letter-spacing="0.5" class="logo-text-secondary">& BI Solutions</text>
+                </svg>
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <div class="nav-item">
+                    <span class="nav-link" style="cursor: default;">Services <i class="fas fa-chevron-down"></i></span>
+                    <div class="dropdown-menu">
+                        <a href="services.html#svc1" class="dropdown-link"><i
+                                class="fas fa-briefcase"></i><span>Consulting</span></a>
+                        <a href="services.html#svc2" class="dropdown-link"><i
+                                class="fas fa-users"></i><span>Staffing</span></a>
+                        <a href="services.html#svc3" class="dropdown-link"><i
+                                class="fas fa-chalkboard-teacher"></i><span>Training</span></a>
+                        <a href="services.html#svc4" class="dropdown-link"><i class="fas fa-rocket"></i><span>Hire &
+                                Deploy</span></a>
+                        <a href="ui-ux.html" class="dropdown-link"><i class="fas fa-palette"></i><span>UI/UX
+                                Design</span></a>
+                        <div class="dropdown-divider"></div>
+                        <a href="services.html" class="dropdown-link" style="font-weight: 600; color: #2563EB;"><i
+                                class="fas fa-th-large"></i><span>All Services</span></a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <span class="nav-link active">Solutions <i class="fas fa-chevron-down"></i></span>
+                    <div class="dropdown-menu">
+                        <a href="business-intelligence.html" class="dropdown-link"><i
+                                class="fas fa-chart-line"></i><span>Business Intelligence</span></a>
+                        <a href="cloud-services.html" class="dropdown-link active"><i
+                                class="fas fa-cloud"></i><span>Cloud
+                                Services</span></a>
+                        <a href="ai-solutions.html" class="dropdown-link"><i class="fas fa-brain"></i><span>AI
+                                Solutions</span></a>
+                        <a href="quantitative-risk.html" class="dropdown-link"><i
+                                class="fas fa-shield-alt"></i><span>Quantitative Risk</span></a>
+                    </div>
+                </div>
+                <a href="expertise.html" class="nav-link">Expertise</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="header-cta-wrapper"><button class="header-btn open-chat-trigger">Get Started</button></div>
+            <button class="mobile-toggle" aria-label="Menu"><i class="fas fa-bars hamburger-icon"></i></button>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="hero-wrapper">
+            <div class="ambient-background"></div>
+            <div class="glow-blob blob-right"></div>
+            <div class="glow-blob blob-left"></div>
+
+            <div class="hero-grid">
+                <div class="hero-text-content">
+                    <div class="hero-tag">
+                        <span class="material-symbols-outlined" style="font-size: 16px;">cloud_sync</span>
+                        <span>Cloud Transformation</span>
+                    </div>
+                    <h1 class="hero-title">Transform Your <br><span>Business.</span></h1>
+                    <p class="hero-desc">
+                        HBR Analytics offers an expansive suite of cloud services tailored to help businesses realize
+                        their full potential.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn-lg btn-primary-hero open-chat-trigger">
+                            Start Migration
+                        </button>
+                        <a href="#services" class="btn-lg btn-outline-hero">
+                            <span class="material-symbols-outlined">arrow_downward</span>
+                            Explore Services
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="card-stack">
+                        <div class="glass-card card-storage">
+                            <div class="card-header">
+                                <span class="card-title-text">Cloud Storage</span>
+                                <div class="growth-pill">
+                                    <span class="material-symbols-outlined" style="font-size:14px">database</span>
+                                    Secure
+                                </div>
+                            </div>
+                            <div class="storage-visual">
+                                <div class="storage-bar-bg">
+                                    <div class="storage-bar-fill"></div>
+                                </div>
+                                <div class="storage-stats">
+                                    <span>Encrypted</span>
+                                    <span>Available</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="glass-card card-uptime">
+                            <div class="card-header">
+                                <span class="card-title-text">System Uptime</span>
+                                <span class="material-symbols-outlined" style="color:#22c55e">check_circle</span>
+                            </div>
+                            <div class="uptime-display">
+                                <span class="uptime-text">99.9%</span>
+                                <div class="status-grid">
+                                    <div class="status-dot active"></div>
+                                    <div class="status-dot active"></div>
+                                    <div class="status-dot active"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="section-white" id="services">
+            <div class="common-container">
+                <div class="section-header-custom reveal-on-scroll">
+                    <span class="section-badge"><i class="fas fa-cloud"></i> Comprehensive Range</span>
+                    <h2 class="section-title">Our <span class="highlight-text">Cloud Services</span></h2>
+                    <p class="section-desc">Tailored solutions to help businesses realize their full potential through
+                        secure and scalable cloud infrastructure.</p>
+                </div>
+
+                <div class="animated-card-grid">
+                    <div class="animated-feature-card reveal-on-scroll" style="transition-delay: 0s;">
+                        <div class="card-icon"><i class="fas fa-chart-pie"></i></div>
+                        <h3>Cloud Analytics</h3>
+                        <p>Harness the power of data with our cloud analytics services, helping businesses extract
+                            actionable insights to make informed decisions and drive expansion.</p>
+                    </div>
+
+                    <div class="animated-feature-card reveal-on-scroll" style="transition-delay: 0.1s;">
+                        <div class="card-icon"><i class="fas fa-database"></i></div>
+                        <h3>Cloud Storage & Backup</h3>
+                        <p>Your information remains protected at all times with our cloud storage solutions. Redundant
+                            systems ensure data integrity so you have peace of mind against loss.</p>
+                    </div>
+
+                    <div class="animated-feature-card reveal-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="card-icon"><i class="fas fa-server"></i></div>
+                        <h3>Infrastructure Services</h3>
+                        <p>A secure and flexible foundation to host applications. You get scalable storage options and
+                            high-performance computing capacities designed to safeguard assets.</p>
+                    </div>
+
+                    <div class="animated-feature-card reveal-on-scroll" style="transition-delay: 0.3s;">
+                        <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Cloud Security</h3>
+                        <p>Our top priority is safeguarding your information. We encompass identity management,
+                            encryption, and threat detection to keep sensitive material protected.</p>
+                    </div>
+
+                    <div class="animated-feature-card reveal-on-scroll" style="transition-delay: 0.4s;">
+                        <div class="card-icon"><i class="fas fa-exchange-alt"></i></div>
+                        <h3>Cloud Migration</h3>
+                        <p>Guide your migration from on-premise infrastructure to the cloud smoothly with minimal
+                            interruption. From assessment through planning and execution.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-tools-section">
+            <div class="common-container">
+                <div class="section-header-custom reveal-on-scroll">
+                    <span class="section-badge"><i class="fas fa-tools"></i> Technology Stack</span>
+                    <h2 class="section-title">Supported <span class="highlight-text">Platforms</span></h2>
+                    <p class="section-desc">We deploy solutions across all major cloud providers and SAP ecosystems.</p>
+                </div>
+
+                <div class="tools-grid">
+                    <a href="expertise.html" class="tool-card reveal-on-scroll" style="transition-delay: 0s;">
+                        <div class="tool-artboard"></div>
+                        <div class="tool-overlay"></div>
+                        <div class="tool-content">
+                            <span class="tool-badge">Platform</span>
+                            <h3 class="tool-title">SAP BTP</h3>
+                            <div class="tool-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </a>
+                    <a href="expertise.html" class="tool-card reveal-on-scroll" style="transition-delay: 0.1s;">
+                        <div class="tool-artboard"></div>
+                        <div class="tool-overlay"></div>
+                        <div class="tool-content">
+                            <span class="tool-badge">Infrastructure</span>
+                            <h3 class="tool-title">AWS</h3>
+                            <div class="tool-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </a>
+                    <a href="expertise.html" class="tool-card reveal-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="tool-artboard"></div>
+                        <div class="tool-overlay"></div>
+                        <div class="tool-content">
+                            <span class="tool-badge">Cloud</span>
+                            <h3 class="tool-title">Azure</h3>
+                            <div class="tool-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <div class="common-container">
+                <div class="section-header-custom reveal-on-scroll">
+                    <span class="section-badge"><i class="fas fa-road"></i> Migration Journey</span>
+                    <h2 class="section-title">Seamless <span class="highlight-text">Transition</span></h2>
+                    <p class="section-desc">A structured approach to ensure your move to the cloud is secure, efficient,
+                        and non-disruptive.</p>
+                </div>
+
+                <div class="process-steps">
+                    <div class="process-step-card reveal-on-scroll" style="transition-delay: 0s;">
+                        <div class="step-number"><i class="fas fa-clipboard-check"></i></div>
+                        <h3 class="text-lg font-bold mb-2">1. Assess</h3>
+                        <p class="text-sm text-gray-500">We analyze your current infrastructure to identify requirements
+                            and potential risks.</p>
+                    </div>
+                    <div class="process-step-card reveal-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="step-number"><i class="fas fa-truck-loading"></i></div>
+                        <h3 class="text-lg font-bold mb-2">2. Migrate</h3>
+                        <p class="text-sm text-gray-500">Executing the migration plan with tailored strategies to ensure
+                            zero data loss.</p>
+                    </div>
+                    <div class="process-step-card reveal-on-scroll" style="transition-delay: 0.4s;">
+                        <div class="step-number"><i class="fas fa-lock"></i></div>
+                        <h3 class="text-lg font-bold mb-2">3. Secure</h3>
+                        <p class="text-sm text-gray-500">Implementing robust encryption, identity management, and threat
+                            detection.</p>
+                    </div>
+                    <div class="process-step-card reveal-on-scroll" style="transition-delay: 0.6s;">
+                        <div class="step-number"><i class="fas fa-rocket"></i></div>
+                        <h3 class="text-lg font-bold mb-2">4. Optimize</h3>
+                        <p class="text-sm text-gray-500">Continuous monitoring and scaling resources to match your
+                            business needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="parallax-section" id="why-choose-us">
+            <div class="common-container">
+                <div class="section-header-custom reveal-on-scroll">
+                    <span class="section-badge"><i class="fas fa-handshake"></i> HBR Advantage</span>
+                    <h2 class="section-title">Why Choose HBR <span class="highlight-text">Cloud Services?</span></h2>
+                    <p class="section-desc">We understand the significance of providing you with reliable yet
+                        high-performance cloud services.</p>
+                </div>
+
+                <div class="parallax-grid" id="parallaxGrid"
+                    style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+
+                    <div class="parallax-card reveal-on-scroll" data-speed="0"
+                        style="flex: 0 1 calc(33.333% - 20px); min-width: 300px;">
+                        <i class="fas fa-check-circle"></i>
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Reliability & Performance</h3>
+                        <p class="text-gray-600 text-sm flex-grow">State-of-the-art infrastructure and redundant systems
+                            ensure maximum uptime and optimal performance of critical apps.</p>
+                    </div>
+
+                    <div class="parallax-card reveal-on-scroll" data-speed="0"
+                        style="flex: 0 1 calc(33.333% - 20px); min-width: 300px;">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Scalability</h3>
+                        <p class="text-gray-600 text-sm flex-grow">Our services grow with your business. Flexible
+                            solutions allow you to adapt to changing demands quickly and seamlessly.</p>
+                    </div>
+
+                    <div class="parallax-card reveal-on-scroll" data-speed="0"
+                        style="flex: 0 1 calc(33.333% - 20px); min-width: 300px;">
+                        <i class="fas fa-user-shield"></i>
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Security & Compliance</h3>
+                        <p class="text-gray-600 text-sm flex-grow">We adhere to industry-leading standards so your
+                            sensitive data remains protected against unwarranted access or breaches.</p>
+                    </div>
+
+                    <div class="parallax-card reveal-on-scroll" data-speed="0"
+                        style="flex: 0 1 calc(33.333% - 20px); min-width: 300px;">
+                        <i class="fas fa-coins"></i>
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Cost-Effectiveness</h3>
+                        <p class="text-gray-600 text-sm flex-grow">Reduce infrastructure expenses with our pay-as-you-go
+                            model, charging only for what resources are used.</p>
+                    </div>
+
+                    <div class="parallax-card reveal-on-scroll" data-speed="0"
+                        style="flex: 0 1 calc(33.333% - 20px); min-width: 300px;">
+                        <i class="fas fa-users"></i>
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Expertise</h3>
+                        <p class="text-gray-600 text-sm flex-grow">Our team of cloud experts possess all the skills
+                            required to craft tailored cloud solutions specifically for your requirements.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section reveal-on-scroll" id="faq">
+            <div class="common-container">
+                <div class="tabs-header-section">
+                    <span class="tabs-section-badge"><i class="fas fa-lightbulb"></i> Strategic Insights</span>
+                </div>
+                <div class="faq-grid">
+                    <div class="faq-title-col">
+                        <h2 class="faq-title">Strategic <br><span class="highlight-text">Value</span></h2>
+                        <p class="faq-desc">Learn how our Cloud solutions transform business operations and drive
+                            innovation.</p>
+                    </div>
+                    <div class="faq-list">
+
+                        <div class="faq-accordion-item">
+                            <div class="faq-border-mask"></div>
+                            <div class="faq-inner-card">
+                                <div class="faq-question">
+                                    <h3>Transform Your Business With Cloud Services</h3>
+                                    <div class="faq-icon-cont"><i class="fas fa-chevron-down"></i></div>
+                                </div>
+                                <div class="faq-content-inner">
+                                    <div class="faq-body">
+                                        <p>HBR Analytics offers an expansive suite of cloud services tailored to help
+                                            businesses realize their full potential. Utilizing cutting-edge technology
+                                            and an experienced team, HBR provides secure yet scalable solutions designed
+                                            to spur innovation while streamlining operations for improved performance.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-accordion-item">
+                            <div class="faq-border-mask"></div>
+                            <div class="faq-inner-card">
+                                <div class="faq-question">
+                                    <h3>Seamless Integration and Migration</h3>
+                                    <div class="faq-icon-cont"><i class="fas fa-chevron-down"></i></div>
+                                </div>
+                                <div class="faq-content-inner">
+                                    <div class="faq-body">
+                                        <p>Transitioning to the cloud can be an intricate and time-consuming process.
+                                            HBR Analytics makes the transition easy with seamless integration and
+                                            migration services from our team of specialists, who will guide you every
+                                            step of the way to ensure an effortless journey and minimal impact on
+                                            operations.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-accordion-item">
+                            <div class="faq-border-mask"></div>
+                            <div class="faq-inner-card">
+                                <div class="faq-question">
+                                    <h3>Real-Time Data Analytics and Insights</h3>
+                                    <div class="faq-icon-cont"><i class="fas fa-chevron-down"></i></div>
+                                </div>
+                                <div class="faq-content-inner">
+                                    <div class="faq-body">
+                                        <p>Our cloud services feature advanced analytics capabilities, offering
+                                            real-time insight into your business operations. Equipped with powerful data
+                                            analysis tools, these insights allow for informed decision-making, trend
+                                            identification, and uncovering valuable business intelligence to spur growth
+                                            and innovation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section reveal-on-scroll" id="contact">
+            <div class="cta-container">
+                <div class="cta-content">
+                    <h1 class="cta-title">Ready to Move to the Cloud?</h1>
+                    <p class="cta-description">Secure, scalable, and seamless cloud solutions tailored for your
+                        enterprise.</p>
+                </div>
+                <div class="flex flex-1 justify-center">
+                    <button class="cta-button open-chat-trigger" id="main-cta-btn">
+                        <span class="truncate">Start Migration</span>
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo-area">
+                    <svg class="logo-svg footer-logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 54"
+                        fill="none">
+                        <text x="0" y="28" font-family="'Poppins', sans-serif" font-weight="800" font-size="24"
+                            fill="#ffffff">HBR Analytics</text>
+                        <text x="0" y="48" font-family="'Poppins', sans-serif" font-weight="500" font-size="13"
+                            letter-spacing="0.5" fill="#94a3b8" class="secondary-text">& BI Solutions</text>
+                    </svg>
+                </a>
+                <p>Empowering enterprises with cutting-edge analytics, AI-driven insights, and robust risk management
+                    solutions.</p>
+                <div class="social-links">
+                    <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="expertise.html">Expertise</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Solutions</h4>
+                <ul class="footer-links">
+                    <li><a href="business-intelligence.html">Business Intelligence</a></li>
+                    <li><a href="cloud-services.html">Cloud Services</a></li>
+                    <li><a href="ai-solutions.html">AI Solutions</a></li>
+                    <li><a href="quantitative-risk.html">Quantitative Risk</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Contact Us</h4>
+                <ul class="footer-contact-list">
+                    <li class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:08035849001">080
+                            35849001</a></li>
+                    <li class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+14696631132">+1 (469)
+                            663-1132</a></li>
+                    <li class="footer-contact-item"><i class="fas fa-envelope"></i><a
+                            href="mailto:info@hbranalytics.com">info@hbranalytics.com</a></li>
+                    <li class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>No 6, Shankari Building,
+                            <br>2nd floor, Marathahalli, <br>Bangalore - 560037</span></li>
+                    <li class="footer-contact-item"><i class="fas fa-globe-americas"></i><span>10440 Meadow Park Tower,
+                            <br>Suite 220, Dallas,<br> Texas - 75231</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright-bar">
+            <div class="copyright-content">
+                <span>© 2025 HBR Analytics. All rights reserved.</span>
+                <span class="credit-text">Designed & Developed by <a href="https://supernexsys.com"
+                        target="_blank">supernexsys</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-form-overlay" id="chat-overlay">
+        <div class="chat-form-card">
+            <div class="chat-header">
+                <div class="chat-header-text">
+                    <h3>Let's Connect</h3>
+                    <p>Tell us about your goals. We'll engineer the solution.</p>
+                </div>
+                <button class="close-chat-btn" id="close-chat" aria-label="Close Chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-body">
+                <form action="#" method="POST">
+                    <input type="text" class="chat-input" placeholder="Full Name" required>
+                    <input type="email" class="chat-input" placeholder="Email Address" required>
+                    <input type="tel" class="chat-input" placeholder="Phone Number" required>
+                    <textarea class="chat-input chat-input-textarea" placeholder="Tell us about your goals..."
+                        required></textarea>
+                    <button type="submit" class="chat-submit">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <button id="floating-chat-trigger" aria-label="Open Chat">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+    </button>
+
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/sap-cloud.js"></script>
+</body>
+
+</html>

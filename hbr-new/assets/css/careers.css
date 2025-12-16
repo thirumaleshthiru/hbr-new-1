@@ -1,0 +1,673 @@
+/* ===================== CAREERS PAGE STYLES (UPDATED) ===================== */
+
+/* COMMON SECTIONS */
+.jobs-section,
+.culture-section {
+    padding: 100px 0;
+    position: relative;
+    background-color: #f8fbff;
+}
+
+.culture-section {
+    background: radial-gradient(circle at center, #ffffff 0%, #f8fbff 100%);
+}
+
+.common-container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 24px;
+    position: relative;
+    z-index: 10;
+}
+
+.section-header-custom {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(37, 99, 235, 0.1);
+    color: var(--brand-blue-light);
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.section-title {
+    font-size: 40px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 15px;
+}
+
+.section-desc {
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.highlight-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ===================== JOB ACCORDION DESIGN ===================== */
+.job-accordion-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.job-accordion-item {
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 1;
+}
+
+/* GLOWING BORDER MASK */
+.job-border-mask {
+    position: absolute;
+    inset: -1px;
+    border-radius: 17px;
+    z-index: -1;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.job-border-mask::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(from var(--gradient-angle), transparent 20%, var(--brand-blue-light) 50%, transparent 80%);
+    animation: rotation 4s linear infinite;
+}
+
+.job-accordion-item.active .job-border-mask {
+    opacity: 1;
+}
+
+/* INNER CARD */
+.job-inner-card {
+    background: #ffffff;
+    border-radius: 16px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    transition: border-color 0.3s;
+}
+
+.job-accordion-item.active .job-inner-card {
+    border-color: transparent;
+}
+
+/* HEADER */
+.job-header {
+    padding: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    user-select: none;
+}
+
+.job-main-info h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 12px;
+    transition: color 0.3s;
+}
+
+.job-accordion-item.active .job-main-info h3 {
+    color: var(--brand-blue-light);
+}
+
+.job-meta-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.job-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #f8fafc;
+    color: #64748b;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s;
+}
+
+.job-tag i {
+    font-size: 12px;
+}
+
+.job-accordion-item.active .job-tag {
+    background: rgba(37, 99, 235, 0.08);
+    color: var(--brand-blue-light);
+    border-color: rgba(37, 99, 235, 0.2);
+}
+
+/* ICON */
+.job-toggle-icon {
+    width: 40px;
+    height: 40px;
+    background: #f1f5f9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    flex-shrink: 0;
+    margin-left: 16px;
+    transition: transform 0.8s cubic-bezier(.75, -.5, 0, 1.75), background 0.3s, color 0.3s;
+}
+
+.job-accordion-item.active .job-toggle-icon {
+    transform: rotate(180deg);
+    background: var(--brand-blue-light);
+    color: white;
+}
+
+/* CONTENT AREA */
+.job-content-wrapper {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.8s cubic-bezier(.75, -.5, 0, 1.75);
+}
+
+.job-content-inner {
+    padding: 0 24px 24px 24px;
+    color: #475569;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.job-section-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #94a3b8;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.job-section-title:first-child {
+    margin-top: 10px;
+}
+
+.job-content-inner ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.job-content-inner li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+}
+
+.job-content-inner li::before {
+    content: "•";
+    color: var(--brand-blue-light);
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    left: 4px;
+    top: -3px;
+}
+
+/* APPLY BTN */
+.job-footer {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #f1f5f9;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.job-apply-btn {
+    padding: 12px 32px;
+    background: var(--gradient-primary);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.25);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.job-apply-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+}
+
+/* PAGINATION */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 60px;
+}
+
+.page-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e2e8f0;
+    background: white;
+    color: #64748b;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.page-btn:hover:not(.disabled) {
+    border-color: var(--brand-blue-light);
+    color: var(--brand-blue-light);
+}
+
+.page-btn.active {
+    background: var(--brand-blue-light);
+    color: white;
+    border-color: var(--brand-blue-light);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.page-btn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: #f1f5f9;
+}
+
+/* ===================== CULTURE GRID (The 3 Cards) ===================== */
+.image-card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Default: 3 columns */
+    gap: 30px;
+}
+
+.image-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid #f1f5f9;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(37, 99, 235, 0.1);
+    border-color: rgba(37, 99, 235, 0.2);
+}
+
+.card-img-container {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.image-card:hover .card-img {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 24px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* ===================== MOBILE FIX: FORCE 1 COLUMN ===================== */
+@media (max-width: 768px) {
+    .image-card-grid {
+        grid-template-columns: 1fr !important;
+        /* Forces single column on mobile */
+        gap: 24px;
+    }
+}
+
+/* ===================== MODAL FIXES (Z-Index) ===================== */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 10000 !important;
+    /* Increased Z-Index to stay above header pill */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.modal-overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+}
+
+.modal-card {
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+    background: white;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    transform: scale(0.95);
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.modal-overlay.active .modal-card {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #f8fafc;
+    border: none;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.modal-close-btn:hover {
+    background: #eff6ff;
+    color: var(--brand-blue-light);
+}
+
+/* Other Modal Styles... (unchanged) */
+.modal-header-content h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 8px;
+}
+
+.modal-header-content p {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 15px;
+    background: #f8fafc;
+    outline: none;
+}
+
+.form-group input:focus {
+    background: white;
+    border-color: var(--brand-blue-light);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+.form-row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media(max-width: 576px) {
+    .form-row-2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+.readonly-input {
+    background: #eff6ff !important;
+    color: #1e40af;
+    border-color: #dbeafe !important;
+}
+
+.modal-submit-btn {
+    width: 100%;
+    padding: 16px;
+    background: var(--gradient-primary);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.modal-submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(37, 99, 235, 0.3);
+}
+
+/* ===================== MODAL SCROLL FIX (MOBILE) ===================== */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 10000 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+    /* Ensure backdrop covers everything */
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+}
+
+.modal-card {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    transform: scale(0.95);
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 10;
+
+    /* --- MOBILE SCROLL FIX --- */
+    max-height: 90vh;
+    /* Limits height to 90% of screen */
+    overflow-y: auto;
+    /* Adds internal scrollbar if content is too long */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Custom Scrollbar for Modal */
+.modal-card::-webkit-scrollbar {
+    width: 6px;
+}
+
+.modal-card::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.modal-card::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+
+/* ===================== MODERN FILE UPLOAD STYLE ===================== */
+.file-upload-box {
+    position: relative;
+    /* Container for absolute positioning */
+    width: 100%;
+    height: 120px;
+    background: #f8fafc;
+    border: 2px dashed #cbd5e1;
+    /* Dashed border style */
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* Hover Effect */
+.file-upload-box:hover {
+    background: #eff6ff;
+    border-color: var(--brand-blue-light);
+}
+
+/* The "Old Style" Input - Hidden but clickable */
+.file-input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    /* Makes the ugly button invisible */
+    cursor: pointer;
+    z-index: 10;
+    /* sits on top of everything to catch clicks */
+}
+
+/* The Custom Design Inside */
+.upload-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    pointer-events: none;
+    /* Let clicks pass through to the input */
+}
+
+.upload-content i {
+    font-size: 24px;
+    color: var(--brand-blue-light);
+    margin-bottom: 8px;
+}
+
+.upload-content span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 4px;
+}
+
+.upload-content small {
+    font-size: 12px;
+    color: #94a3b8;
+    /* Muted text color */
+    line-height: 1.5;
+    margin-top: 4px;
+    /* Added spacing */
+    display: block;
+}
+
+/* Focus state for accessibility */
+.file-input:focus+.upload-content {
+    outline: none;
+}
+
+.file-upload-box:focus-within {
+    border-color: var(--brand-blue-light);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}

@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="HBR Analytics - Enterprise Solutions. Data-Driven Decisions for a Digital Future.">
+    <title>HBR Analytics - Enterprise Solutions</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/home.css">
+</head>
+
+<body>
+
+    <div class="mobile-backdrop"></div>
+    <div class="mobile-menu-drawer">
+        <a href="index.html" class="mobile-nav-link active">Home</a>
+        <div class="mobile-dropdown">
+            <button class="mobile-dropdown-toggle">Services <i class="fas fa-chevron-down"></i></button>
+            <div class="mobile-dropdown-menu">
+                <a href="services.html#svc1" class="mobile-dropdown-link"><i
+                        class="fas fa-briefcase"></i><span>Consulting</span></a>
+                <a href="services.html#svc2" class="mobile-dropdown-link"><i
+                        class="fas fa-users"></i><span>Staffing</span></a>
+                <a href="services.html#svc3" class="mobile-dropdown-link"><i
+                        class="fas fa-chalkboard-teacher"></i><span>Training</span></a>
+                <a href="services.html#svc4" class="mobile-dropdown-link"><i class="fas fa-rocket"></i><span>Hire &
+                        Deploy</span></a>
+                <a href="ui-ux.html" class="mobile-dropdown-link"><i class="fas fa-palette"></i><span>UI/UX
+                        Design</span></a>
+                <a href="services.html" class="mobile-dropdown-link"
+                    style="font-weight: 700; color: #2563EB; border-top: 1px solid rgba(0,0,0,0.05); margin-top: 5px; padding-top: 10px;"><i
+                        class="fas fa-th-large"></i><span>All Services</span></a>
+            </div>
+        </div>
+        <div class="mobile-dropdown open">
+            <button class="mobile-dropdown-toggle">Solutions <i class="fas fa-chevron-down"></i></button>
+            <div class="mobile-dropdown-menu">
+                <a href="business-intelligence.html" class="mobile-dropdown-link"><i
+                        class="fas fa-chart-line"></i><span>Business Intelligence</span></a>
+                <a href="cloud-services.html" class="mobile-dropdown-link"><i class="fas fa-cloud"></i><span>Cloud
+                        Services</span></a>
+                <a href="ai-solutions.html" class="mobile-dropdown-link"><i class="fas fa-brain"></i><span>AI
+                        Solutions</span></a>
+                <a href="quantitative-risk.html" class="mobile-dropdown-link"><i
+                        class="fas fa-shield-alt"></i><span>Quantitative Risk</span></a>
+            </div>
+        </div>
+        <a href="expertise.html" class="mobile-nav-link">Expertise</a>
+        <a href="careers.html" class="mobile-nav-link">Careers</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+        <button class="mobile-cta-btn open-chat-trigger">Get Started</button>
+    </div>
+
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-area">
+                <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 54" fill="none">
+                    <text x="0" y="28" font-family="'Poppins', sans-serif" font-weight="800" font-size="24"
+                        class="logo-text-primary">HBR Analytics</text>
+                    <text x="0" y="48" font-family="'Poppins', sans-serif" font-weight="500" font-size="13"
+                        letter-spacing="0.5" class="logo-text-secondary">& BI Solutions</text>
+                </svg>
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <div class="nav-item">
+                    <span class="nav-link" style="cursor: default;">Services <i class="fas fa-chevron-down"></i></span>
+                    <div class="dropdown-menu">
+                        <a href="services.html#svc1" class="dropdown-link"><i
+                                class="fas fa-briefcase"></i><span>Consulting</span></a>
+                        <a href="services.html#svc2" class="dropdown-link"><i
+                                class="fas fa-users"></i><span>Staffing</span></a>
+                        <a href="services.html#svc3" class="dropdown-link"><i
+                                class="fas fa-chalkboard-teacher"></i><span>Training</span></a>
+                        <a href="services.html#svc4" class="dropdown-link"><i class="fas fa-rocket"></i><span>Hire &
+                                Deploy</span></a>
+                        <a href="ui-ux.html" class="dropdown-link"><i class="fas fa-palette"></i><span>UI/UX
+                                Design</span></a>
+                        <div class="dropdown-divider"></div>
+                        <a href="services.html" class="dropdown-link" style="font-weight: 600; color: #2563EB;"><i
+                                class="fas fa-th-large"></i><span>All Services</span></a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <span class="nav-link">Solutions <i class="fas fa-chevron-down"></i></span>
+                    <div class="dropdown-menu">
+                        <a href="business-intelligence.html" class="dropdown-link"><i
+                                class="fas fa-chart-line"></i><span>Business Intelligence</span></a>
+                        <a href="cloud-services.html" class="dropdown-link"><i class="fas fa-cloud"></i><span>Cloud
+                                Services</span></a>
+                        <a href="ai-solutions.html" class="dropdown-link"><i class="fas fa-brain"></i><span>AI
+                                Solutions</span></a>
+                        <a href="quantitative-risk.html" class="dropdown-link"><i
+                                class="fas fa-shield-alt"></i><span>Quantitative Risk</span></a>
+                    </div>
+                </div>
+                <a href="expertise.html" class="nav-link">Expertise</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="header-cta-wrapper"><button class="header-btn open-chat-trigger">Get Started</button></div>
+            <button class="mobile-toggle" aria-label="Menu"><i class="fas fa-bars hamburger-icon"></i></button>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <canvas id="heroCanvas"></canvas>
+        <div class="hero-content reveal-on-scroll">
+            <h1 class="hero-title">WELCOME TO <br><span style="color: var(--brand-blue-light);">HBR ANALYTICS</span> &
+                Solutions</h1>
+            <p class="hero-subtitle">Only Open Mind Can Fly</p>
+            <button class="hero-btn open-chat-trigger">
+                Start Your Journey <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <section class="features-intro-section reveal-on-scroll">
+        <div class="common-container">
+            <div class="tabs-header-section">
+                <span class="tabs-section-badge">
+                    <i class="fas fa-check-circle"></i> Why Choose HBR Analytics?
+                </span>
+            </div>
+            <div class="features-card-grid">
+                <div class="feature-intro-card">
+                    <h3 class="text-2xl font-bold mb-4" style="color: var(--text-primary);">Unparalleled Expertise</h3>
+                    <p class="mb-6 text-sm" style="color: var(--text-secondary);">With years of experience and a team of
+                        seasoned professionals on our side, we bring unparalleled expertise in Business Intelligence to
+                        the table. Our team understands all aspects of data analytics to extract insightful information
+                        from your data sets.</p>
+                    <div class="mt-auto flex-grow">
+                        <div class="h-32 w-full"><svg class="h-full w-full" preserveAspectRatio="xMidYMid meet"
+                                viewBox="0 0 400 200">
+                                <line stroke="#e5e7eb" stroke-width="1" x1="30" x2="395" y1="180" y2="180"></line>
+                                <line stroke="#e5e7eb" stroke-width="1" x1="30" x2="395" y1="145" y2="145"></line>
+                                <line stroke="#e5e7eb" stroke-width="1" x1="30" x2="395" y1="110" y2="110"></line>
+                                <path class="animated-line"
+                                    d="M40,160 C100,120 120,50 200,80 S280,150 320,100 S380,40 390,50" fill="none"
+                                    stroke="#005bff" stroke-width="3"></path>
+                            </svg></div>
+                    </div>
+                </div>
+                <div class="feature-intro-card">
+                    <h3 class="text-2xl font-bold mb-4" style="color: var(--text-primary);">Seamless Integration and
+                        Scalability</h3>
+                    <p class="mb-6 text-sm" style="color: var(--text-secondary);">Our business intelligence solutions
+                        seamlessly integrate into existing systems and processes with minimal transition times or
+                        disruption. Moreover, they're built to scale with your company so as your needs change.</p>
+                    <div class="mt-auto flex flex-grow items-end space-x-3 h-32 justify-center">
+                        <div class="bar w-8 bg-blue-100 rounded-t-md animate-grow-bar" style="height: 60%;"></div>
+                        <div class="bar w-8 bg-blue-200 rounded-t-md animate-grow-bar"
+                            style="height: 85%; animation-delay: 0.1s;"></div>
+                        <div class="bar w-8 bg-blue-500 rounded-t-md animate-grow-bar"
+                            style="height: 100%; animation-delay: 0.2s;"></div>
+                        <div class="bar w-8 bg-blue-200 rounded-t-md animate-grow-bar"
+                            style="height: 70%; animation-delay: 0.3s;"></div>
+                        <div class="bar w-8 bg-blue-100 rounded-t-md animate-grow-bar"
+                            style="height: 55%; animation-delay: 0.4s;"></div>
+                    </div>
+                </div>
+                <div class="feature-intro-card">
+                    <h3 class="text-2xl font-bold mb-4" style="color: var(--text-primary);">Tailored Solutions</h3>
+                    <p class="mb-6 text-sm" style="color: var(--text-secondary);">We understand that each business is
+                        distinct. That is why we tailor solutions specifically to fit the requirements of individual
+                        companies - be they startups or large enterprises alike. Regardless of what size of the business
+                        it may be, we have the expertise and flexibility necessary to meet its client's specific
+                        requirements.</p>
+                    <div class="relative mt-4 h-24 w-full">
+                        <div class="absolute left-4 top-4 flex items-center gap-2 rounded-xl bg-white px-3 py-2 shadow-sm border border-slate-100 animate-fade-in-up"
+                            style="animation-delay: 0.5s;">
+                            <span class="material-symbols-outlined text-blue-500 text-lg">settings</span>
+                            <p class="text-xs font-bold text-gray-800">Custom</p>
+                        </div>
+                        <div class="absolute right-4 bottom-4 flex items-center gap-2 rounded-xl bg-white px-3 py-2 shadow-md border border-slate-100 animate-fade-in-up"
+                            style="animation-delay: 0.8s;">
+                            <span class="material-symbols-outlined text-green-500 text-lg">check_circle</span>
+                            <p class="text-xs font-bold text-gray-800">Flexible</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="feature-intro-card">
+                    <h3 class="text-2xl font-bold mb-4" style="color: var(--text-primary);">Excellent Customer Support
+                        and Training</h3>
+                    <p class="mb-6 text-sm" style="color: var(--text-secondary);">HBR Analytics prioritizes customer
+                        satisfaction by offering easy and quick access to a team of trained support agents who are here
+                        to address any inquiries or address concerns about any aspect of our solutions.</p>
+                    <div class="mt-auto flex justify-center items-center h-24">
+                        <div class="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 animate-fade-in-up"
+                            style="animation-delay: 0.2s;">
+                            <span class="material-symbols-outlined">
+                                headset_mic
+                            </span>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="feature-intro-card">
+                    <h3 class="text-xl font-bold mb-4" style="color: var(--text-primary);">Excellent Customer Support
+                        and Training</h3>
+                    <p class="mb-6 text-sm" style="color: var(--text-secondary);">HBR Analytics prioritizes
+                        customer satisfaction by offering easy and quick access to a team of trained support agents who
+                        are here to address any inquiries or address concerns about any aspect of our solutions.</p>
+                    <div class="mt-auto flex justify-center items-center h-24">
+                        <div class="relative flex flex-col items-center animate-fade-in-up"
+                            style="animation-delay: 0.2s;">
+                            <span class="material-symbols-outlined text-blue-600 text-6xl">support_agent</span>
+                            <div class="absolute top-0 right-0 w-4 h-4 bg-green-500 rounded-full border-2 border-white">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-intro-card">
+                    <h3 class="text-xl font-bold mb-4" style="color: var(--text-primary);">Innovation First</h3>
+                    <p class="mb-6 text-sm" style="color: var(--text-secondary);">We leverage cutting-edge technologies
+                        and methodologies to provide forward-thinking solutions that keep you ahead of the competition.
+                    </p>
+                    <div class="mt-auto flex justify-center items-center h-24">
+                        <div class="relative flex flex-col items-center">
+                            <span class="material-symbols-outlined text-yellow-500 text-5xl"
+                                style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+                            <div class="absolute -top-1 -right-1 w-3 h-3 bg-yellow-400 rounded-full animate-ping"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-intro-card">
+                    <h3 class="text-xl font-bold mb-4" style="color: var(--text-primary);">Scalable Solutions</h3>
+                    <p class="mb-6 text-sm" style="color: var(--text-secondary);">Infrastructure built to grow with your
+                        business. Easily expand resources and capabilities as your operational needs evolve.</p>
+                    <div class="mt-auto flex justify-center items-end h-24 gap-2 pb-2">
+                        <div class="w-3 bg-blue-100 rounded-t h-6"></div>
+                        <div class="w-3 bg-blue-200 rounded-t h-10"></div>
+                        <div class="w-3 bg-blue-300 rounded-t h-14"></div>
+                        <div class="w-3 bg-blue-400 rounded-t h-16"></div>
+                        <div class="w-3 bg-blue-600 rounded-t h-20"></div>
+                        <span class="material-symbols-outlined text-blue-600 text-xl mb-16">trending_up</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tags-grid-wrapper hidden">
+                <div class="feature-tag"><i class="fas fa-lightbulb"></i><span>Innovation First</span></div>
+                <div class="feature-tag"><i class="fas fa-users"></i><span>Expert Team</span></div>
+                <div class="feature-tag"><i class="fas fa-clock"></i><span>Proven Track Record</span></div>
+                <div class="feature-tag"><i class="fas fa-headset"></i><span>24/7 Support</span></div>
+                <div class="feature-tag"><i class="fas fa-shield-alt"></i><span>Security & Compliance</span></div>
+                <div class="feature-tag"><i class="fas fa-chart-line"></i><span>Scalable Solutions</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-cards-section effect-void reveal-on-scroll" id="services">
+        <div class="common-container">
+            <div class="tabs-header-section">
+                <span class="tabs-section-badge"><i class="fas fa-layer-group"></i> Our Services</span>
+                <h2 class="tabs-section-title">Solutions in <span class="highlight-text">Focus</span></h2>
+                <p class="tabs-section-description" style="margin-top: 16px;">High-impact strategies designed for the
+                    next generation of enterprise growth.</p>
+            </div>
+
+            <div class="services-tab-list">
+                <div class="tab-tracker"></div>
+                <button class="tab-btn active" data-target="#svc1">Consulting</button>
+                <button class="tab-btn" data-target="#svc2">Staffing</button>
+                <button class="tab-btn" data-target="#svc3">Training</button>
+                <button class="tab-btn" data-target="#svc4">Hire & Deploy</button>
+                <button class="tab-btn" data-target="#svc5">UI/UX Design</button>
+            </div>
+
+            <div class="services-grid-wrapper">
+
+                <div class="service-stack-card active" id="svc1">
+                    <div class="stack-image">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1000&q=80"
+                            alt="Consulting">
+                        <div class="stack-overlay"></div>
+                    </div>
+
+                    <div class="stack-content">
+                        <div class="stack-header">
+                            <div class="stack-titles">
+                                <span class="stack-sub">Strategy</span>
+                                <h3>Consulting & <span class="text-gradient">Support</span></h3>
+                            </div>
+                            <button class="stack-btn">
+                                <span class="btn-text">View More</span> <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+
+                        <div class="stack-body">
+                            <p class="intro-text">Focusing on your most critical issues: strategy, marketing,
+                                operations, and transformation.</p>
+
+                            <div class="stack-reveal">
+                                <div class="reveal-inner">
+                                    <p>Our management consulting services focus on our clients' most critical issues and
+                                        opportunities: strategy, marketing, organization, operations, technology,
+                                        transformation, digital, advanced analytics, corporate finance, mergers &
+                                        acquisitions and sustainability across all industries and geographies.
+                                        We bring deep, functional expertise, but are known for our holistic perspective:
+                                        we capture value across boundaries and between the silos of any organization.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-stack-card" id="svc2">
+                    <div class="stack-image">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1000&q=80" alt="Staffing">
+                        <div class="stack-overlay"></div>
+                    </div>
+                    <div class="stack-content">
+                        <div class="stack-header">
+                            <div class="stack-titles">
+                                <span class="stack-sub">Recruitment</span>
+                                <h3>Staffing <span class="text-gradient">Services</span></h3>
+                            </div>
+                            <button class="stack-btn">
+                                <span class="btn-text">View More</span> <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="stack-body">
+                            <p class="intro-text">We understand, define, and solve specific staffing needs.</p>
+                            <div class="stack-reveal">
+                                <div class="reveal-inner">
+                                    <p>We understand, define, and solve specific staffing needs, thus allowing small and
+                                        large organisations the time and freedom to focus on their core business. With
+                                        HBR as your consulting partner, you can easily meet your short-term and
+                                        long-term business objectives. Once we thoroughly understand your staffing
+                                        requirements, we will be able to provide you the right people with the right
+                                        skill set, attitude, and commitment that will help propel your organisation
+                                        toward success.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-stack-card" id="svc3">
+                    <div class="stack-image">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1000&q=80"
+                            alt="Training">
+                        <div class="stack-overlay"></div>
+                    </div>
+                    <div class="stack-content">
+                        <div class="stack-header">
+                            <div class="stack-titles">
+                                <span class="stack-sub">Learning</span>
+                                <h3>Corporate <span class="text-gradient">Training</span></h3>
+                            </div>
+                            <button class="stack-btn">
+                                <span class="btn-text">View More</span> <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="stack-body">
+                            <p class="intro-text">Onboarding journeys to prepare new employees to become productive
+                                quickly.</p>
+                            <div class="stack-reveal">
+                                <div class="reveal-inner">
+                                    <p>Training is the process of getting learners up to speed with new responsibilities
+                                        and familiar with company culture. Like any learning experience, onboarding is
+                                        journeys, not a one-time event. Onboarding prepares new employees to become
+                                        productive quickly and reinforce the decision to join the organization.Dynamic
+                                        learning experiences to connect early on with employees and build confidence to
+                                        ensure a greater contribution.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-stack-card" id="svc4">
+                    <div class="stack-image">
+                        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1000&q=80"
+                            alt="Hire & Deploy">
+                        <div class="stack-overlay"></div>
+                    </div>
+                    <div class="stack-content">
+                        <div class="stack-header">
+                            <div class="stack-titles">
+                                <span class="stack-sub">Deployment</span>
+                                <h3>Hire, Train & <span class="text-gradient">Deploy</span></h3>
+                            </div>
+                            <button class="stack-btn">
+                                <span class="btn-text">View More</span> <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="stack-body">
+                            <p class="intro-text">Talent sourced at the national level to join your workforce trained
+                                and skill-ready.</p>
+                            <div class="stack-reveal">
+                                <div class="reveal-inner">
+                                    <p>We introduce talent sourced at the national level to join your workforce trained
+                                        and skill-ready.We nullify your effort and cut down costs for you by introducing
+                                        our HTD concept that will replace your manpower for sourcing, training and
+                                        hiring for your teams success in the future. Our process to select only the best
+                                        candidates to suit your requirement is flawless and helps you get the top talent
+                                        from across India.
+                                    <p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-stack-card" id="svc5">
+                    <div class="stack-image">
+                        <img src="/assets/images/ui-ux.jpg" alt="UI/UX Design">
+                        <div class="stack-overlay"></div>
+                    </div>
+                    <div class="stack-content">
+                        <div class="stack-header">
+                            <div class="stack-titles">
+                                <span class="stack-sub">Experience</span>
+                                <h3>UI/UX <span class="text-gradient">Design</span></h3>
+                            </div>
+                            <button class="stack-btn">
+                                <span class="btn-text">View More</span> <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="stack-body">
+                            <p class="intro-text">Crafting intuitive and engaging user experiences that drive customer
+                                satisfaction.</p>
+                            <div class="stack-reveal">
+                                <div class="reveal-inner">
+                                    <p>Our design process is rooted in empathy and data. We conduct thorough user
+                                        research and usability testing to ensure every interaction is intuitive.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="services-cta-container">
+                <a href="services.html" class="industries-cta" id="services-cta-btn">
+                    <span>Explore Our Services</span><i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="tabs-section effect-micro-texture reveal-on-scroll" id="solutions">
+        <div class="common-container">
+            <div class="tabs-header-section">
+                <span class="tabs-section-badge"><i class="fas fa-microchip"></i> Our Solutions</span>
+                <h2 class="tabs-section-title">Advanced <span class="highlight-text">Tech Solutions</span></h2>
+                <p class="tabs-section-description">Comprehensive suite of specialized solutions leveraging SAP
+                    technologies and advanced analytics to accelerate your digital transformation.</p>
+            </div>
+            <div class="tabs-navigation">
+                <button class="tab-nav-item active" data-tab="tab1">
+                    <div class="tab-nav-content">
+                        <div class="tab-number">01</div>
+                        <div class="tab-text-content">
+                            <h6>SAP Solutions</h6><small>Transform with SAP</small>
+                        </div>
+                    </div>
+                </button>
+                <button class="tab-nav-item" data-tab="tab2">
+                    <div class="tab-nav-content">
+                        <div class="tab-number">02</div>
+                        <div class="tab-text-content">
+                            <h6>Cloud Solutions</h6><small>SAP & Cloud</small>
+                        </div>
+                    </div>
+                </button>
+                <button class="tab-nav-item" data-tab="tab3">
+                    <div class="tab-nav-content">
+                        <div class="tab-number">03</div>
+                        <div class="tab-text-content">
+                            <h6>AI Solutions</h6><small>AI & Machine Learning</small>
+                        </div>
+                    </div>
+                </button>
+                <button class="tab-nav-item" data-tab="tab4">
+                    <div class="tab-nav-content">
+                        <div class="tab-number">04</div>
+                        <div class="tab-text-content">
+                            <h6>Quantitative Risk</h6><small>Financial Safety</small>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div class="solutions-content-container">
+                <div class="tabs-content-area">
+                    <div class="tab-pane-custom active" id="tab1">
+                        <div class="content-wrapper">
+                            <div class="col-image">
+                                <div class="feature-display-card">
+                                    <div class="card-visual">
+                                        <div class="animation-layer">
+                                            <div class="particles">
+                                                <div class="particle"></div>
+                                                <div class="particle"></div>
+                                                <div class="particle"></div>
+                                                <div class="particle"></div>
+                                            </div>
+                                            <div class="gradient-orb" style="top: 30%; left: 30%;"></div>
+                                            <div class="data-bars">
+                                                <div class="bar"></div>
+                                                <div class="bar"></div>
+                                                <div class="bar"></div>
+                                                <div class="bar"></div>
+                                                <div class="bar"></div>
+                                                <div class="bar"></div>
+                                            </div>
+                                            <div class="icon-container">
+                                                <div class="central-icon">
+                                                    <div class="icon-core"><svg class="icon-svg" viewBox="0 0 24 24"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M3 13h2v8H3v-8zm6-4h2v12H9V9zm6-6h2v18h-2V3zm6 8h2v10h-2V11z" />
+                                                        </svg></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3 class="card-title">Transform Your Business with SAP Solutions</h3>
+                                    <p class="card-description">Customized solutions tailored to your requirements.
+                                        Streamline operations from finance to supply chain management.</p>
+                                </div>
+                            </div>
+                            <div class="col-services">
+                                <div class="services-list-wrapper">
+                                    <div class="service-card active">
+                                        <div class="service-text">
+                                            <h3 class="service-title">Customized Solutions</h3>
+                                            <p class="service-description">At SAP Solutions, we recognize the unique
+                                                nature of every business, which is why our SAP Solution can be tailored
+                                                specifically to your requirements. Our team of specialists will
+                                                collaborate closely with you in understanding your goals and designing a
+                                                tailored solution that meets them all.</p>
+                                        </div>
+                                    </div>
+                                    <div class="service-card">
+                                        <div class="service-text">
+                                            <h3 class="service-title">Simplify Business Processes</h3>
+                                            <p class="service-description">Our SAP Solution provides extensive tools and
+                                                technologies that enable your organization to streamline business
+                                                operations - from finance and supply chain management to human
+                                                resources, customer relationships and relationship marketing management;
+                                                our SAP Solution integrates smoothly into existing systems for real-time
+                                                insights that increase productivity.</p>
+                                        </div>
+                                    </div>
+                                    <div class="service-card">
+                                        <div class="service-text">
+                                            <h3 class="service-title">Enhanced Data Management</h3>
+                                            <p class="service-description">Our SAP Solution allows for effective data
+                                                containerisation and management, providing greater accuracy and
+                                                consistency within your organization. From entry to analysis, this
+                                                comprehensive data solution makes your life simpler so that data-driven
+                                                decisions can be made with confidence.</p>
+                                        </div>
+                                    </div>
+                                    <div class="learn-more-wrapper"><a href="solutions.html" class="learn-more-btn"
+                                            id="bi-cta-btn">Explore BI Solutions <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane-custom" id="tab2">
+                        <div class="content-wrapper">
+                            <div class="col-image">
+                                <div class="feature-display-card">
+                                    <div class="card-visual">
+                                        <div class="animation-layer">
+                                            <div class="particles">
+                                                <div class="particle"></div>
+                                                <div class="particle"></div>
+                                                <div class="particle"></div>
+                                                <div class="particle"></div>
+                                            </div>
+                                            <div class="gradient-orb" style="top: 50%; left: 50%;"></div>
+                                            <div class="icon-container">
+                                                <div class="wave wave-1"></div>
+                                                <div class="wave wave-2"></div>
+                                                <div class="central-icon">
+                                                    <div class="icon-core"><svg class="icon-svg" viewBox="0 0 24 24"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z" />
+                                                        </svg></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3 class="card-title">Embrace the Benefits of Cloud Services</h3>
+                                    <p class="card-description">Secure, flexible infrastructure that scales with your
+                                        business requirements.</p>
+                                </div>
+                            </div>
+                            <div class="col-services">
+                                <div class="services-list-wrapper">
+                                    <div class="service-card active">
+                                        <div class="service-text">
+                                            <h3 class="service-title">Enhanced Collaboration and Accessibility</h3>
+                                            <p class="service-description">Our Cloud Services enable seamless
+                                                collaboration among teams from any location. Employees have easy access
+                                                to data and applications they require in order to work efficiently from
+                                                anywhere - improving productivity while supporting remote work
+                                                arrangements.</p>
+                                        </div>
+                                    </div>
+                                    <div class="service-card">
+                                        <div class="service-text">
+                                            <h3 class="service-title">Scalable and Flexible Infrastructure</h3>
+                                            <p class="service-description">Our Cloud Services provide a secure, flexible
+                                                infrastructure that scales with your business requirements. Whether it
+                                                be migrating existing systems to the cloud or creating brand-new
+                                                applications - our experts are on hand to guide the transition with
+                                                ease!</p>
+                                        </div>
+                                    </div>
+                                    <div class="service-card">
+                                        <div class="service-text">
+                                            <h3 class="service-title">Cost-Effective Solutions</h3>
+                                            <p class="service-description">By switching to our cost-effective Cloud
+                                                Services, you can reduce IT expenditure significantly with our
+                                                pay-as-you-go model, allowing only for what resources are actually used
+                                                and providing greater scale flexibility depending on your requirements.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="learn-more-wrapper"><a href="solutions.html" class="learn-more-btn"
+                                            id="sap-cta-btn">Explore Cloud Solutions <i
+                                                class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane-custom" id="tab3">
+                        <div class="content-wrapper">
+                            <div class="col-image">
+                                <div class="feature-display-card">
+                                    <div class="card-visual">
+                                        <div class="animation-layer">
+                                            <div class="particles">
+                                                <div class="particle"></div>
+                                                <div class="particle"></div>
+                                                <div class="particle"></div>
+                                                <div class="particle"></div>
+                                            </div>
+                                            <div class="gradient-orb" style="top: 50%; left: 50%;"></div>
+                                            <div class="scan-line"></div>
+                                            <div class="icon-container">
+                                                <div class="central-icon">
+                                                    <div class="icon-core"><i
+                                                            class="fas fa-brain text-3xl text-blue-600"></i></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3 class="card-title">Harness the Power of AI</h3>
+                                    <p class="card-description">Leverage machine learning and NLP to automate processes
+                                        and gather vital insights.</p>
+                                </div>
+                            </div>
+                            <div class="col-services">
+                                <div class="services-list-wrapper">
+                                    <div class="service-card active">
+                                        <div class="service-text">
+                                            <h3 class="service-title">Intelligent Automation</h3>
+                                            <p class="service-description">With our AI Solution, you can automate
+                                                repetitive and time-consuming tasks to free up your workforce for more
+                                                strategic initiatives. By eliminating manual errors and increasing
+                                                efficiency, our solution enables you to optimize operations and achieve
+                                                increased productivity.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="service-card">
+                                        <div class="service-text">
+                                            <h3 class="service-title">Personalized Customer Experiences</h3>
+                                            <p class="service-description">Our AI Solution empowers you to build better
+                                                customer relationships by understanding customer data and behaviour more
+                                                closely, anticipating needs and offering recommendations while forging
+                                                long-term relationships.</p>
+                                        </div>
+                                    </div>
+                                    <div class="service-card">
+                                        <div class="service-text">
+                                            <h3 class="service-title">Unleash the Power of Artificial Intelligence</h3>
+                                            <p class="service-description">Our AI Solution leverages cutting-edge
+                                                technologies like machine learning and natural language processing to
+                                                automate processes, gather vital insights, and enhance decision-making
+                                                processes. From predictive analytics to chatbots, this AI Solution
+                                                empowers businesses to stay ahead of competition while offering
+                                                exceptional customer experiences.</p>
+                                        </div>
+                                    </div>
+                                    <div class="learn-more-wrapper"><a href="solutions.html" class="learn-more-btn"
+                                            id="ai-cta-btn">Explore AI Solutions <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane-custom" id="tab4">
+                        <div class="content-wrapper">
+                            <div class="col-image">
+                                <div class="feature-display-card">
+                                    <div class="card-visual">
+                                        <div class="animation-layer">
+                                            <div class="particles">
+                                                <div class="particle"></div>
+                                                <div class="particle"></div>
+                                                <div class="particle"></div>
+                                                <div class="particle"></div>
+                                            </div>
+                                            <div class="gradient-orb" style="top: 60%; left: 40%;"></div>
+                                            <div class="icon-container">
+                                                <div class="orbit-trail"></div>
+                                                <div class="central-icon">
+                                                    <div class="icon-core"><svg class="icon-svg" viewBox="0 0 24 24"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
+                                                        </svg></div>
+                                                </div>
+                                                <div class="orbit-icon">
+                                                    <div class="orbit-icon-inner">
+                                                        <div class="icon-core"><svg class="icon-svg"
+                                                                style="width: 16px; height: 16px;" viewBox="0 0 24 24"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z" />
+                                                            </svg></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3 class="card-title">Quantitative Risk</h3>
+                                    <p class="card-description">Advanced quantitative models and risk frameworks to
+                                        identify, measure, and mitigate financial risks</p>
+                                </div>
+                            </div>
+                            <div class="col-services">
+                                <div class="services-list-wrapper">
+                                    <div class="service-card active">
+                                        <div class="service-text">
+                                            <h3 class="service-title">Financial Modeling</h3>
+                                            <p class="service-description">Advanced quantitative models and risk
+                                                frameworks to identify, measure, and mitigate financial risks</p>
+                                        </div>
+                                    </div>
+                                    <div class="service-card">
+                                        <div class="service-text">
+                                            <h3 class="service-title">Credit Risk Modeling</h3>
+                                            <p class="service-description">Robust statistical models to assess and
+                                                manage borrower default probabilities.</p>
+                                        </div>
+                                    </div>
+                                    <div class="service-card">
+                                        <div class="service-text">
+                                            <h3 class="service-title">Market Risk Analysis</h3>
+                                            <p class="service-description">Sophisticated tools to evaluate potential
+                                                losses due to market factor movements.</p>
+                                        </div>
+                                    </div>
+                                    <div class="learn-more-wrapper"><a href="solutions.html" class="learn-more-btn"
+                                            id="risk-cta-btn">Explore Risk Solutions <i
+                                                class="fas fa-arrow-right"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="technical-solutions-section effect-glow-grid reveal-on-scroll" id="expertise">
+        <div class="common-container">
+            <div class="tabs-header-section">
+                <span class="tabs-section-badge"><i class="fas fa-cubes"></i> Our Expertise</span>
+                <h2 class="tabs-section-title">Strategic <span class="highlight-text">Business Expertise</span></h2>
+                <p class="tabs-section-description">Explore our specialized service areas designed to drive growth,
+                    optimize operations, and build sustainable success.</p>
+            </div>
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-number">01</div>
+                    <div class="card-content-spacer">
+                        <div class="title-wrapper">
+                            <div class="card-accent-line"></div>
+                            <h3 class="solution-title">SAP BW</h3>
+                        </div>
+                        <p class="solution-description">Empower data warehousing and reporting with SAP BW solutions
+                            designed for efficient data collection.</p>
+                        <a href="expertise.html" class="solution-link">Explore Solution <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-number">02</div>
+                    <div class="card-content-spacer">
+                        <div class="title-wrapper">
+                            <div class="card-accent-line"></div>
+                            <h3 class="solution-title">SAP BW4HANA</h3>
+                        </div>
+                        <p class="solution-description">Accelerate data processing with next-generation SAP BW4HANA
+                            offering real-time analytics.</p>
+                        <a href="expertise.html" class="solution-link">Explore Solution <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-number">03</div>
+                    <div class="card-content-spacer">
+                        <div class="title-wrapper">
+                            <div class="card-accent-line"></div>
+                            <h3 class="solution-title">SAP Analytics Cloud</h3>
+                        </div>
+                        <p class="solution-description">Enable intelligent decision-making with SAC's unified platform
+                            combining BI and planning.</p>
+                        <a href="expertise.html" class="solution-link">Explore Solution <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-number">04</div>
+                    <div class="card-content-spacer">
+                        <div class="title-wrapper">
+                            <div class="card-accent-line"></div>
+                            <h3 class="solution-title">Analysis for Office</h3>
+                        </div>
+                        <p class="solution-description">Enhance reporting with SAP AO Excel add-in for dynamic reports
+                            and real-time data access.</p>
+                        <a href="expertise.html" class="solution-link">Explore Solution <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-number">05</div>
+                    <div class="card-content-spacer">
+                        <div class="title-wrapper">
+                            <div class="card-accent-line"></div>
+                            <h3 class="solution-title">SAP BPC</h3>
+                        </div>
+                        <p class="solution-description">Optimize financial planning and consolidation processes with
+                            comprehensive SAP BPC.</p>
+                        <a href="expertise.html" class="solution-link">Explore Solution <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-number">06</div>
+                    <div class="card-content-spacer">
+                        <div class="title-wrapper">
+                            <div class="card-accent-line"></div>
+                            <h3 class="solution-title">Group Reporting</h3>
+                        </div>
+                        <p class="solution-description">Streamline financial consolidation and reporting with automated
+                            solutions ensuring compliance.</p>
+                        <a href="expertise.html" class="solution-link">Explore Solution <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-number">07</div>
+                    <div class="card-content-spacer">
+                        <div class="title-wrapper">
+                            <div class="card-accent-line"></div>
+                            <h3 class="solution-title">Embedded Analytics</h3>
+                        </div>
+                        <p class="solution-description">Unlock real-time business intelligence with embedded analytics
+                            in SAP S4HANA.</p>
+                        <a href="expertise.html" class="solution-link">Explore Solution <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-number">08</div>
+                    <div class="card-content-spacer">
+                        <div class="title-wrapper">
+                            <div class="card-accent-line"></div>
+                            <h3 class="solution-title">SAP IBP</h3>
+                        </div>
+                        <p class="solution-description">Optimize supply chain planning with SAP IBP for improved demand
+                            forecasting.</p>
+                        <a href="expertise.html" class="solution-link">Explore Solution <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="services-cta-container">
+                <a href="expertise.html" class="industries-cta" id="expertise-cta-btn">
+                    <span>Explore All Solutions</span><i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section effect-centric-sandwich reveal-on-scroll hidden">
+        <div class="common-container">
+            <div class="tabs-header-section">
+                <span class="tabs-section-badge"><i class="fas fa-comment-alt"></i> Testimonials</span>
+                <h2 class="tabs-section-title">Trusted by <span class="highlight-text">Industry Leaders</span></h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                    <p class="testimonial-text">"HBR Analytics transformed our data infrastructure. The real-time
+                        insights from SAP BW4HANA have improved our decision-making speed by 40%."</p>
+                    <div class="testimonial-user">
+                        <div class="user-avatar">JS</div>
+                        <div class="user-info">
+                            <h5>John Smith</h5><span>CTO, Retail Giant</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                    <p class="testimonial-text">"The team's expertise in Quantitative Risk modeling helped us navigate
+                        market volatility with confidence. Truly exceptional service."</p>
+                    <div class="testimonial-user">
+                        <div class="user-avatar">AL</div>
+                        <div class="user-info">
+                            <h5>Amanda Lee</h5><span>CFO, FinTech Corp</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                    <p class="testimonial-text">"Their staffing solutions provided us with highly skilled SAP
+                        consultants exactly when we needed them. Highly recommended."</p>
+                    <div class="testimonial-user">
+                        <div class="user-avatar">MR</div>
+                        <div class="user-info">
+                            <h5>Michael Ross</h5><span>Director, HealthCare Inc</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="industries-section effect-noise-field reveal-on-scroll" id="industries">
+        <div class="common-container">
+            <div class="industries-unified-card">
+                <div class="industries-content">
+                    <div class="industries-badge">Industries</div>
+                    <h2 class="industries-heading">Industries We Serve</h2>
+                    <p class="industries-description">Delivering specialized analytics solutions across diverse sectors,
+                        empowering businesses with data-driven insights tailored to their unique industry challenges.
+                    </p>
+                    <a href="industries.html" class="industries-cta" id="industries-cta-btn">
+                        <span>Explore Solutions</span><i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="industries-cards-section">
+                    <div class="scrolling-box-frame">
+                        <div class="scrolling-inner-mask">
+                            <div class="industries-cards-container">
+                                <div class="industries-cards-wrapper">
+                                    <div class="industries-column industries-column-scroll">
+                                        <div class="scrolling-card">
+                                            <div class="scrolling-icon"><i class="fas fa-shopping-cart"></i></div>
+                                            <h3 class="scrolling-name">Retail</h3>
+                                        </div>
+                                        <div class="scrolling-card">
+                                            <div class="scrolling-icon"><i class="fas fa-heartbeat"></i></div>
+                                            <h3 class="scrolling-name">Healthcare</h3>
+                                        </div>
+                                        <div class="scrolling-card">
+                                            <div class="scrolling-icon"><i class="fas fa-university"></i></div>
+                                            <h3 class="scrolling-name">Finance</h3>
+                                        </div>
+                                        <div class="scrolling-card">
+                                            <div class="scrolling-icon"><i class="fas fa-industry"></i></div>
+                                            <h3 class="scrolling-name">Manufacturing</h3>
+                                        </div>
+                                        <div class="scrolling-card">
+                                            <div class="scrolling-icon"><i class="fas fa-bolt"></i></div>
+                                            <h3 class="scrolling-name">Energy</h3>
+                                        </div>
+                                        <div class="scrolling-card">
+                                            <div class="scrolling-icon"><i class="fas fa-pills"></i></div>
+                                            <h3 class="scrolling-name">Pharmaceuticals</h3>
+                                        </div>
+                                        <div class="scrolling-card">
+                                            <div class="scrolling-icon"><i class="fas fa-car"></i></div>
+                                            <h3 class="scrolling-name">Automotive</h3>
+                                        </div>
+                                        <div class="scrolling-card">
+                                            <div class="scrolling-icon"><i class="fas fa-building"></i></div>
+                                            <h3 class="scrolling-name">Real Estate</h3>
+                                        </div>
+                                        <div class="scrolling-card">
+                                            <div class="scrolling-icon"><i class="fas fa-shopping-cart"></i></div>
+                                            <h3 class="scrolling-name">Retail</h3>
+                                        </div>
+                                        <div class="scrolling-card">
+                                            <div class="scrolling-icon"><i class="fas fa-heartbeat"></i></div>
+                                            <h3 class="scrolling-name">Healthcare</h3>
+                                        </div>
+                                        <div class="scrolling-card">
+                                            <div class="scrolling-icon"><i class="fas fa-university"></i></div>
+                                            <h3 class="scrolling-name">Finance</h3>
+                                        </div>
+                                        <div class="scrolling-card">
+                                            <div class="scrolling-icon"><i class="fas fa-industry"></i></div>
+                                            <h3 class="scrolling-name">Manufacturing</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section reveal-on-scroll" id="faq">
+        <div class="common-container">
+            <div class="tabs-header-section">
+                <span class="tabs-section-badge"><i class="fas fa-question-circle"></i> FAQ</span>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-title-col">
+                    <h2 class="faq-title">Frequently<br><span class="highlight-text">Asked Questions</span></h2>
+                    <p class="faq-desc">Seeking basic information? Our FAQ section is a ready reckoner with precise
+                        answers to the most probable queries regarding our analytics, staffing, and consulting services.
+                    </p>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-accordion-item">
+                        <div class="faq-border-mask"></div>
+                        <div class="faq-inner-card">
+                            <div class="faq-question">
+                                <h3>What industries do you specialize in?</h3>
+                                <div class="faq-icon-cont"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg></div>
+                            </div>
+                            <div class="faq-content-inner">
+                                <div class="faq-body">
+                                    <p>We specialize in a wide range of industries including Retail, Healthcare,
+                                        Finance, Manufacturing, Energy, and Pharmaceuticals. Our solutions are tailored
+                                        to meet the specific compliance and operational needs of each sector.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-accordion-item">
+                        <div class="faq-border-mask"></div>
+                        <div class="faq-inner-card">
+                            <div class="faq-question">
+                                <h3>How does your "Hire, Train & Deploy" model work?</h3>
+                                <div class="faq-icon-cont"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg></div>
+                            </div>
+                            <div class="faq-content-inner">
+                                <div class="faq-body">
+                                    <p>We source high-potential talent, train them specifically on the technologies your
+                                        project requires (like SAP, Data Analytics, etc.), and then deploy them to your
+                                        workforce. This eliminates your training costs and ensures day-one productivity.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-accordion-item">
+                        <div class="faq-border-mask"></div>
+                        <div class="faq-inner-card">
+                            <div class="faq-question">
+                                <h3>Can you help migrate our legacy systems to the Cloud?</h3>
+                                <div class="faq-icon-cont"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg></div>
+                            </div>
+                            <div class="faq-content-inner">
+                                <div class="faq-body">
+                                    <p>Absolutely. We specialize in SAP migration and general cloud infrastructure
+                                        setup. We ensure a secure, data-loss-free transition from on-premise legacy
+                                        systems to modern cloud platforms like AWS, Azure, or SAP Cloud.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-accordion-item">
+                        <div class="faq-border-mask"></div>
+                        <div class="faq-inner-card">
+                            <div class="faq-question">
+                                <h3>Do you offer post-implementation support?</h3>
+                                <div class="faq-icon-cont"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg></div>
+                            </div>
+                            <div class="faq-content-inner">
+                                <div class="faq-body">
+                                    <p>Yes, we offer comprehensive post-implementation support and maintenance packages.
+                                        We monitor system health, provide updates, and assist with any technical issues
+                                        to ensure continuous uptime.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-accordion-item">
+                        <div class="faq-border-mask"></div>
+                        <div class="faq-inner-card">
+                            <div class="faq-question">
+                                <h3>How long does a typical consulting project take?</h3>
+                                <div class="faq-icon-cont"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg></div>
+                            </div>
+                            <div class="faq-content-inner">
+                                <div class="faq-body">
+                                    <p>Project timelines vary based on scope. A specific staffing requirement might take
+                                        2 weeks, while a full SAP implementation could take 6-12 months. We provide a
+                                        detailed roadmap during our initial assessment phase.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section reveal-on-scroll" id="contact">
+        <div class=" cta-container">
+            <div class="cta-content">
+                <h1 class="cta-title">Ready to Transform Your Business Insights?</h1>
+                <p class="cta-description">Unlock powerful analytics and data-driven decisions with our all-in-one
+                    platform.</p>
+            </div>
+            <div class="flex flex-1 justify-center">
+                <button class="cta-button open-chat-trigger" id="main-cta-btn">
+                    <span class="truncate">Get Started Now</span>
+                    <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo-area">
+                    <svg class="logo-svg footer-logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 54"
+                        fill="none">
+                        <text x="0" y="28" font-family="'Poppins', sans-serif" font-weight="800" font-size="24"
+                            fill="#ffffff">HBR Analytics</text>
+                        <text x="0" y="48" font-family="'Poppins', sans-serif" font-weight="500" font-size="13"
+                            letter-spacing="0.5" fill="#94a3b8" class="secondary-text">& BI Solutions</text>
+                    </svg>
+                </a>
+                <p>Empowering enterprises with cutting-edge analytics, AI-driven insights, and robust risk management
+                    solutions.</p>
+                <div class="social-links">
+                    <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="expertise.html">Expertise</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Solutions</h4>
+                <ul class="footer-links">
+                    <li><a href="business-intelligence.html">Business Intelligence</a></li>
+                    <li><a href="cloud-services.html">Cloud Services</a></li>
+                    <li><a href="ai-solutions.html">AI Solutions</a></li>
+                    <li><a href="quantitative-risk.html">Quantitative Risk</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Contact Us</h4>
+                <ul class="footer-contact-list">
+                    <li class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:08035849001">080
+                            35849001</a></li>
+                    <li class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+14696631132">+1 (469)
+                            663-1132</a></li>
+                    <li class="footer-contact-item"><i class="fas fa-envelope"></i><a
+                            href="mailto:info@hbranalytics.com">info@hbranalytics.com</a></li>
+                    <li class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>No 6, Shankari Building,
+                            <br>2nd floor, Marathahalli, <br>Bangalore - 560037</span></li>
+                    <li class="footer-contact-item"><i class="fas fa-globe-americas"></i><span>10440 Meadow Park Tower,
+                            <br>Suite 220, Dallas,<br> Texas - 75231</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright-bar">
+            <div class="copyright-content">
+                <span>© 2025 HBR Analytics. All rights reserved.</span>
+                <span class="credit-text">Designed & Developed by <a href="https://supernexsys.com"
+                        target="_blank">supernexsys</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-form-overlay" id="chat-overlay">
+        <div class="chat-form-card">
+            <div class="chat-header">
+                <div class="chat-header-text">
+                    <h3>Let's Connect</h3>
+                    <p>Tell us about your goals. We'll engineer the solution.</p>
+                </div>
+                <button class="close-chat-btn" id="close-chat" aria-label="Close Chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-body">
+                <form action="#" method="POST">
+                    <input type="text" class="chat-input" placeholder="Full Name" required>
+                    <input type="email" class="chat-input" placeholder="Email Address" required>
+                    <input type="tel" class="chat-input" placeholder="Phone Number" required>
+                    <textarea class="chat-input chat-input-textarea" placeholder="Tell us about your goals..."
+                        required></textarea>
+                    <button type="submit" class="chat-submit">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <button id="floating-chat-trigger" aria-label="Open Chat">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+    </button>
+
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/home.js"></script>
+</body>
+
+</html>

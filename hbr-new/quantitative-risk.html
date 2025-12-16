@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="HBR Analytics - Quantitative Risk. Model Validation (SR 11-7), Market & Credit Risk, and Regulatory Compliance.">
+    <title>Quantitative Risk - HBR Analytics</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/quantitative-risk.css">
+</head>
+
+<body>
+
+    <div class="mobile-backdrop"></div>
+    <div class="mobile-menu-drawer">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <div class="mobile-dropdown">
+            <button class="mobile-dropdown-toggle">Services <i class="fas fa-chevron-down"></i></button>
+            <div class="mobile-dropdown-menu">
+                <a href="services.html#svc1" class="mobile-dropdown-link"><i
+                        class="fas fa-briefcase"></i><span>Consulting</span></a>
+                <a href="services.html#svc2" class="mobile-dropdown-link"><i
+                        class="fas fa-users"></i><span>Staffing</span></a>
+                <a href="services.html#svc3" class="mobile-dropdown-link"><i
+                        class="fas fa-chalkboard-teacher"></i><span>Training</span></a>
+                <a href="services.html#svc4" class="mobile-dropdown-link"><i class="fas fa-rocket"></i><span>Hire &
+                        Deploy</span></a>
+                <a href="ui-ux.html" class="mobile-dropdown-link"><i class="fas fa-palette"></i><span>UI/UX
+                        Design</span></a>
+                <a href="services.html" class="mobile-dropdown-link"
+                    style="font-weight: 700; color: #2563EB; border-top: 1px solid rgba(0,0,0,0.05); margin-top: 5px; padding-top: 10px;"><i
+                        class="fas fa-th-large"></i><span>All Services</span></a>
+            </div>
+        </div>
+        <div class="mobile-dropdown open">
+            <button class="mobile-dropdown-toggle active">Solutions <i class="fas fa-chevron-down"></i></button>
+            <div class="mobile-dropdown-menu">
+                <a href="business-intelligence.html" class="mobile-dropdown-link"><i
+                        class="fas fa-chart-line"></i><span>Business Intelligence</span></a>
+                <a href="cloud-services.html" class="mobile-dropdown-link"><i class="fas fa-cloud"></i><span>Cloud
+                        Services</span></a>
+                <a href="ai-solutions.html" class="mobile-dropdown-link"><i class="fas fa-brain"></i><span>AI
+                        Solutions</span></a>
+                <a href="quantitative-risk.html" class="mobile-dropdown-link active"><i
+                        class="fas fa-shield-alt"></i><span>Quantitative Risk</span></a>
+            </div>
+        </div>
+        <a href="expertise.html" class="mobile-nav-link">Expertise</a>
+        <a href="careers.html" class="mobile-nav-link">Careers</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+        <button class="mobile-cta-btn open-chat-trigger">Get Started</button>
+    </div>
+
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-area">
+                <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 54" fill="none">
+                    <text x="0" y="28" font-family="'Poppins', sans-serif" font-weight="800" font-size="24"
+                        class="logo-text-primary">HBR Analytics</text>
+                    <text x="0" y="48" font-family="'Poppins', sans-serif" font-weight="500" font-size="13"
+                        letter-spacing="0.5" class="logo-text-secondary">& BI Solutions</text>
+                </svg>
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <div class="nav-item">
+                    <span class="nav-link" style="cursor: default;">Services <i class="fas fa-chevron-down"></i></span>
+                    <div class="dropdown-menu">
+                        <a href="services.html#svc1" class="dropdown-link"><i
+                                class="fas fa-briefcase"></i><span>Consulting</span></a>
+                        <a href="services.html#svc2" class="dropdown-link"><i
+                                class="fas fa-users"></i><span>Staffing</span></a>
+                        <a href="services.html#svc3" class="dropdown-link"><i
+                                class="fas fa-chalkboard-teacher"></i><span>Training</span></a>
+                        <a href="services.html#svc4" class="dropdown-link"><i class="fas fa-rocket"></i><span>Hire &
+                                Deploy</span></a>
+                        <a href="ui-ux.html" class="dropdown-link"><i class="fas fa-palette"></i><span>UI/UX
+                                Design</span></a>
+                        <div class="dropdown-divider"></div>
+                        <a href="services.html" class="dropdown-link" style="font-weight: 600; color: #2563EB;"><i
+                                class="fas fa-th-large"></i><span>All Services</span></a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <span class="nav-link active">Solutions <i class="fas fa-chevron-down"></i></span>
+                    <div class="dropdown-menu">
+                        <a href="business-intelligence.html" class="dropdown-link"><i
+                                class="fas fa-chart-line"></i><span>Business Intelligence</span></a>
+                        <a href="cloud-services.html" class="dropdown-link"><i class="fas fa-cloud"></i><span>Cloud
+                                Services</span></a>
+                        <a href="ai-solutions.html" class="dropdown-link"><i class="fas fa-brain"></i><span>AI
+                                Solutions</span></a>
+                        <a href="quantitative-risk.html" class="dropdown-link active"><i
+                                class="fas fa-shield-alt"></i><span>Quantitative Risk</span></a>
+                    </div>
+                </div>
+                <a href="expertise.html" class="nav-link">Expertise</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="header-cta-wrapper"><button class="header-btn open-chat-trigger">Get Started</button></div>
+            <button class="mobile-toggle" aria-label="Menu"><i class="fas fa-bars hamburger-icon"></i></button>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="hero-wrapper">
+            <div class="ambient-background"></div>
+            <div class="glow-blob blob-right"></div>
+            <div class="glow-blob blob-left"></div>
+
+            <div class="hero-grid">
+                <div class="hero-text-content">
+                    <div class="hero-tag">
+                        <span class="material-symbols-outlined" style="font-size: 16px;">balance</span>
+                        <span>Risk Consulting</span>
+                    </div>
+                    <h1 class="hero-title">Trusted Experts in <br><span>Quantitative Risk.</span></h1>
+                    <p class="hero-desc">
+                        Over 15 years of experience in Model Development, Validation (SR 11-7), Audit, and Advisory
+                        support across Market, Credit, and Fraud Risk.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn-lg btn-primary-hero open-chat-trigger">
+                            Consult Experts
+                        </button>
+                        <a href="#market-risk" class="btn-lg btn-outline-hero">
+                            <span class="material-symbols-outlined">arrow_downward</span>
+                            Our Capabilities
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="card-stack">
+                        <div class="glass-card card-var">
+                            <div class="card-header">
+                                <span class="card-title-text">VaR Analysis</span>
+                                <div class="growth-pill">
+                                    <span class="material-symbols-outlined" style="font-size:14px">analytics</span>
+                                    SR 11-7
+                                </div>
+                            </div>
+                            <div class="var-visual">
+                                <svg viewBox="0 0 300 120" width="100%" height="100%" preserveAspectRatio="none">
+                                    <path d="M0,110 C50,110 80,10 150,10 C220,10 250,110 300,110" fill="none"
+                                        stroke="rgba(37, 99, 235, 0.2)" stroke-width="2" />
+                                    <path d="M0,110 C50,110 65,80 75,60 L75,110 Z" fill="rgba(239, 68, 68, 0.1)" />
+                                    <path class="animated-path" d="M0,110 C50,110 80,10 150,10 C220,10 250,110 300,110"
+                                        fill="none" stroke="#2563EB" stroke-width="3" stroke-linecap="round" />
+                                    <line x1="75" y1="10" x2="75" y2="110" stroke="#EF4444" stroke-width="2"
+                                        stroke-dasharray="4" />
+                                    <circle cx="75" cy="60" r="4" fill="#EF4444" class="pulsing-dot" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="glass-card card-credit">
+                            <div class="card-header">
+                                <span class="card-title-text">Credit Scoring</span>
+                                <span class="material-symbols-outlined" style="color:#2563EB">score</span>
+                            </div>
+                            <div class="credit-visual">
+                                <div class="stat-row">
+                                    <span class="label">Model Confidence</span>
+                                    <span class="value">98.5%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" style="width: 98%;"></div>
+                                </div>
+                                <div class="chip-list">
+                                    <div class="chip-icon"><small>PD</small></div>
+                                    <div class="chip-icon"><small>LGD</small></div>
+                                    <div class="chip-icon"><small>EAD</small></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="section-white" id="market-risk">
+            <div class="common-container">
+                <div class="section-header-custom reveal-on-scroll">
+                    <span class="section-badge"><i class="fas fa-chart-line"></i> Market Risk</span>
+                    <h2 class="section-title">Market Risk <span class="highlight-text">Capabilities</span></h2>
+                    <p class="section-desc">Expertise in pricing, volatility modeling, and scenario generation.</p>
+                </div>
+
+                <div class="animated-card-grid">
+                    <div class="animated-feature-card reveal-on-scroll" style="transition-delay: 0s;">
+                        <div class="card-icon"><i class="fas fa-calculator"></i></div>
+                        <h3>Pricing Models</h3>
+                        <p><strong>Structured Products:</strong> MBS, CMO, CMBS, MSR.<br>
+                            <strong>Derivatives:</strong> Swaps, Swaptions, Exotics, FX.<br>
+                            <strong>Rates:</strong> Hull-White, SABR, BGM, Black.
+                        </p>
+                    </div>
+
+                    <div class="animated-feature-card reveal-on-scroll" style="transition-delay: 0.1s;">
+                        <div class="card-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                        <h3>Risk Management</h3>
+                        <p>Comprehensive VaR analysis, Counterparty Risk (CVA, PFE), and robust Scenario Generation for
+                            stress testing against market volatility.</p>
+                    </div>
+
+                    <div class="animated-feature-card reveal-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="card-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                        <h3>Reports & Analytics</h3>
+                        <p>Model Validation (SR 11-7), CCAR, Basel 3 SSFA, P&L Attribution, Backtesting, Cash Flow
+                            Forecasts, and Hedge Ineffectiveness.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-grey" id="credit-risk">
+            <div class="common-container">
+                <div class="section-header-custom reveal-on-scroll">
+                    <span class="section-badge"><i class="fas fa-user-shield"></i> Credit Risk</span>
+                    <h2 class="section-title">Credit Risk <span class="highlight-text">Framework</span></h2>
+                    <p class="section-desc">From assessment to recovery, we cover the entire credit lifecycle.</p>
+                </div>
+
+                <div class="process-steps">
+                    <div class="process-step-card reveal-on-scroll" style="transition-delay: 0s;">
+                        <div class="step-number"><i class="fas fa-search-dollar"></i></div>
+                        <h3 class="text-lg font-bold mb-2">Assessment & Scoring</h3>
+                        <p class="text-sm text-gray-500">Creditworthiness evaluation using financial data. Dynamic risk
+                            rating models (PD, LGD, EAD) and stress testing.</p>
+                    </div>
+
+                    <div class="process-step-card reveal-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="step-number"><i class="fas fa-shield-alt"></i></div>
+                        <h3 class="text-lg font-bold mb-2">Risk Mitigation</h3>
+                        <p class="text-sm text-gray-500">Collateral management to offset risk. Structuring guarantees,
+                            credit insurance, and hedging products.</p>
+                    </div>
+
+                    <div class="process-step-card reveal-on-scroll" style="transition-delay: 0.4s;">
+                        <div class="step-number"><i class="fas fa-undo-alt"></i></div>
+                        <h3 class="text-lg font-bold mb-2">Default & Recovery</h3>
+                        <p class="text-sm text-gray-500">Machine learning models for default prediction. Recovery
+                            analytics to refine strategies and improve future decisions.</p>
+                    </div>
+
+                    <div class="process-step-card reveal-on-scroll" style="transition-delay: 0.6s;">
+                        <div class="step-number"><i class="fas fa-gavel"></i></div>
+                        <h3 class="text-lg font-bold mb-2">Compliance</h3>
+                        <p class="text-sm text-gray-500">Basel III alignment (CRD IV), Internal Rating-Based Approach
+                            (IRB), and automated regulatory reporting.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-stack-section">
+            <div class="common-container">
+                <div class="section-header-custom" style="margin-bottom: 30px;">
+                    <span class="text-sm font-bold text-gray-400 uppercase tracking-widest">Tools & Platforms</span>
+                </div>
+
+                <div class="marquee-container">
+                    <div class="marquee-content">
+                        <div class="tech-pill"><i class="fas fa-layer-group"></i> Polypaths</div>
+                        <div class="tech-pill"><i class="fas fa-chart-bar"></i> Bloomberg</div>
+                        <div class="tech-pill"><i class="fas fa-mountain"></i> Summit</div>
+                        <div class="tech-pill"><i class="fas fa-code"></i> FINCAD</div>
+                        <div class="tech-pill"><i class="fas fa-book"></i> Yieldbook</div>
+                        <div class="tech-pill"><i class="fas fa-cube"></i> ADCo</div>
+                        <div class="tech-pill"><i class="fas fa-database"></i> Intex</div>
+                        <div class="tech-pill"><i class="fas fa-chart-pie"></i> QRM</div>
+                        <div class="tech-pill"><i class="fas fa-bolt"></i> AFT</div>
+                        <div class="tech-pill ai-pill"><i class="fas fa-robot"></i> GPT-4</div>
+                        <div class="tech-pill ai-pill"><i class="fas fa-plane"></i> CoPilot</div>
+                        <div class="tech-pill ai-pill"><i class="fas fa-brain"></i> Claude</div>
+                        <div class="tech-pill ai-pill"><i class="fas fa-star"></i> Gemini</div>
+                        <div class="tech-pill code-pill"><i class="fas fa-file-excel"></i> Excel VBA</div>
+                        <div class="tech-pill code-pill"><i class="fas fa-database"></i> SQL</div>
+                        <div class="tech-pill code-pill"><i class="fas fa-registered"></i> R</div>
+                        <div class="tech-pill code-pill"><i class="fas fa-table"></i> SAS</div>
+                        <div class="tech-pill code-pill"><i class="fab fa-python"></i> Python</div>
+                        <div class="tech-pill"><i class="fas fa-layer-group"></i> Polypaths</div>
+                        <div class="tech-pill"><i class="fas fa-chart-bar"></i> Bloomberg</div>
+                        <div class="tech-pill"><i class="fas fa-mountain"></i> Summit</div>
+                        <div class="tech-pill"><i class="fas fa-code"></i> FINCAD</div>
+                        <div class="tech-pill"><i class="fas fa-book"></i> Yieldbook</div>
+                        <div class="tech-pill"><i class="fas fa-cube"></i> ADCo</div>
+                        <div class="tech-pill"><i class="fas fa-database"></i> Intex</div>
+                        <div class="tech-pill"><i class="fas fa-chart-pie"></i> QRM</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section reveal-on-scroll" id="strategic-insights">
+            <div class="common-container">
+                <div class="tabs-header-section">
+                    <span class="tabs-section-badge"><i class="fas fa-lightbulb"></i> Strategic Insights</span>
+                </div>
+                <div class="faq-grid">
+                    <div class="faq-title-col">
+                        <h2 class="faq-title">Strategic <br><span class="highlight-text">Advantage</span></h2>
+                        <p class="faq-desc">Why robust quantitative risk models are your competitive shield.</p>
+                    </div>
+                    <div class="faq-list">
+                        <div class="faq-accordion-item">
+                            <div class="faq-border-mask"></div>
+                            <div class="faq-inner-card">
+                                <div class="faq-question">
+                                    <h3>Compliance as a Competitive Asset</h3>
+                                    <div class="faq-icon-cont"><i class="fas fa-chevron-down"></i></div>
+                                </div>
+                                <div class="faq-content-inner">
+                                    <div class="faq-body">
+                                        <p>In a volatile market, risk models are not just regulatory checkboxes (SR
+                                            11-7, Basel III)—they are strategic assets. Our rigorous validation ensures
+                                            your models stand up to scrutiny while optimizing capital efficiency,
+                                            allowing you to deploy capital with confidence.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section reveal-on-scroll" id="contact">
+            <div class="cta-container">
+                <div class="cta-content">
+                    <h1 class="cta-title">Need Expert Risk Validation?</h1>
+                    <p class="cta-description">Partner with us for SR 11-7 compliant model validation and robust risk
+                        advisory.</p>
+                </div>
+                <div class="flex flex-1 justify-center">
+                    <button class="cta-button open-chat-trigger" id="main-cta-btn">
+                        <span class="truncate">Contact Experts</span>
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo-area">
+                    <svg class="logo-svg footer-logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 54"
+                        fill="none">
+                        <text x="0" y="28" font-family="'Poppins', sans-serif" font-weight="800" font-size="24"
+                            fill="#ffffff">HBR Analytics</text>
+                        <text x="0" y="48" font-family="'Poppins', sans-serif" font-weight="500" font-size="13"
+                            letter-spacing="0.5" fill="#94a3b8" class="secondary-text">& BI Solutions</text>
+                    </svg>
+                </a>
+                <p>Empowering enterprises with cutting-edge analytics, AI-driven insights, and robust risk management
+                    solutions.</p>
+                <div class="social-links">
+                    <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="expertise.html">Expertise</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Solutions</h4>
+                <ul class="footer-links">
+                    <li><a href="business-intelligence.html">Business Intelligence</a></li>
+                    <li><a href="cloud-services.html">Cloud Services</a></li>
+                    <li><a href="ai-solutions.html">AI Solutions</a></li>
+                    <li><a href="quantitative-risk.html">Quantitative Risk</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Contact Us</h4>
+                <ul class="footer-contact-list">
+                    <li class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:08035849001">080
+                            35849001</a></li>
+                    <li class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+14696631132">+1 (469)
+                            663-1132</a></li>
+                    <li class="footer-contact-item"><i class="fas fa-envelope"></i><a
+                            href="mailto:info@hbranalytics.com">info@hbranalytics.com</a></li>
+                    <li class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>No 6, Shankari Building,
+                            <br>2nd floor, Marathahalli, <br>Bangalore - 560037</span></li>
+                    <li class="footer-contact-item"><i class="fas fa-globe-americas"></i><span>10440 Meadow Park Tower,
+                            <br>Suite 220, Dallas,<br> Texas - 75231</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright-bar">
+            <div class="copyright-content">
+                <span>© 2025 HBR Analytics. All rights reserved.</span>
+                <span class="credit-text">Designed & Developed by <a href="https://supernexsys.com"
+                        target="_blank">supernexsys</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-form-overlay" id="chat-overlay">
+        <div class="chat-form-card">
+            <div class="chat-header">
+                <div class="chat-header-text">
+                    <h3>Let's Connect</h3>
+                    <p>Tell us about your goals. We'll engineer the solution.</p>
+                </div>
+                <button class="close-chat-btn" id="close-chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-body">
+                <form action="#" method="POST">
+                    <input type="text" class="chat-input" placeholder="Full Name" required>
+                    <input type="email" class="chat-input" placeholder="Email Address" required>
+                    <input type="tel" class="chat-input" placeholder="Phone Number" required>
+                    <textarea class="chat-input chat-input-textarea" placeholder="Tell us about your goals..."
+                        required></textarea>
+                    <button type="submit" class="chat-submit">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <button id="floating-chat-trigger" aria-label="Open Chat">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+    </button>
+
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/quantitative-risk.js"></script>
+</body>
+
+</html>
